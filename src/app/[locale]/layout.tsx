@@ -37,7 +37,7 @@ const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
   variable: "--font-ibm-plex-arabic",
   subsets: ["arabic", "latin"],
   display: "swap",
-  weight: "100"
+  weight: "100",
 });
 
 export const metadata: Metadata = {
@@ -81,8 +81,8 @@ export default async function LocaleLayout({
     >
       <body>
         <NextIntlClientProvider messages={messages}>
-                <SiteHeader/>
-          
+          <SiteHeader />
+
           {children}
         </NextIntlClientProvider>
       </body>

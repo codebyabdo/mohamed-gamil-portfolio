@@ -1,8 +1,11 @@
-{
-  "home": "الرئيسية",
-  "about": "عن الطبيب",
-  "services": "الخدمات",
-  "cases": "الحالات",
-  "contact": "تواصل",
+  {
+    "home": "الرئيسية",
+    "about": "عن الطبيب",
+    "services": "الخدمات",
+    "cases": "الحالات",
+    "approach": "المنهج",
+    "testimonials": "الشهادات",
+    "insights": "المعرفة",
+    "contact": "تواصل",
   "bookSession": "احجز جلسة"
 }

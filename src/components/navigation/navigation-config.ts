@@ -16,6 +16,18 @@ export const navigationItems = [
     href: "/cases",
   },
   {
+    key: "approach",
+    href: "/approach",
+  },
+  {
+    key: "testimonials",
+    href: "/testimonials",
+  },
+  {
+    key: "insights",
+    href: "/insights",
+  },
+  {
     key: "contact",
     href: "/contact",
   },
@@ -25,3 +37,4 @@ export const navigationCta = {
   key: "bookSession",
   href: "/contact",
 } as const;
+

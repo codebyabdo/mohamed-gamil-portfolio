@@ -22,10 +22,7 @@ function isNavigationItemActive(pathname: string, href: string) {
 
   if (targetPath === "/") return currentPath === "/";
 
-  return (
-    currentPath === targetPath ||
-    currentPath.startsWith(`${targetPath}/`)
-  );
+  return currentPath === targetPath || currentPath.startsWith(`${targetPath}/`);
 }
 
 export function DesktopNav() {
@@ -48,28 +45,23 @@ export function DesktopNav() {
     return idx === -1 ? 0 : idx;
   }, [items, pathname]);
 
+  // No `hidden md:block` here — the parent controls visibility.
   return (
-    <div className="hidden md:block">
-      <GooeyNav
-        items={items}
-        activeIndex={activeIndex}
-        particleCount={15}
-        particleDistances={[90, 10]}
-        particleR={100}
-        animationTime={600}
-        timeVariance={300}
-        colors={[1, 2, 3, 1, 2, 3, 1, 4]}
-        renderLink={({ href, children, onClick, className, ...rest }) => (
-          <Link
-            href={href}
-            onClick={onClick}
-            className={className}
-            {...rest}
-          >
-            {children}
-          </Link>
-        )}
-      />
-    </div>
+    <GooeyNav
+      items={items}
+      activeIndex={activeIndex}
+      particleCount={8}
+      particleDistances={[70, 10]}
+      particleR={160}
+      initialActiveIndex={100}
+      animationTime={600}
+      timeVariance={300}
+      colors={[1, 2, 3, 4]}
+      renderLink={({ href, children, onClick, className, ...rest }) => (
+        <Link href={href} onClick={onClick} className={className} {...rest}>
+          {children}
+        </Link>
+      )}
+    />
   );
 }
