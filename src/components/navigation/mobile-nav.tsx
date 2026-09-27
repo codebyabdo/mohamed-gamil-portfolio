@@ -24,7 +24,7 @@ export function MobileNav() {
     <StaggeredMenu
       position="right"
       items={menuItems}
-      displaySocials={false}
+      displaySocials={true}
       displayItemNumbering
       isFixed
       changeMenuColorOnOpen

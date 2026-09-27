@@ -1,0 +1,44 @@
+{
+  "showcase": {
+    "eyebrow": "Trajectory of Care",
+    "title": "A structured progression from pain to movement confidence.",
+    "description": "Rehabilitation is neither guesswork nor a passive quick fix. It is an intentional sequence of shared understanding, objective assessment, and progressive reconditioning.",
+    "clinicalAction": "Clinical Action",
+    "yourTakeaway": "Your Takeaway",
+    "kineticMentalTrajectory": "Kinetic & Mental Trajectory",
+    "trajectoryDescription": "Every phase is engineered to deconstruct ambiguity, building predictable and resilient kinetic capacity.",
+    "evidenceModel": "Evidence-grounded model",
+    "fullMethodology": "Full Methodology",
+    "phase": "Phase {step}"
+  },
+  "stages": {
+    "01": {
+      "title": "Understand · Listening to Pain Context",
+      "short": "We begin not with silent testing, but with deliberate dialogue regarding what you feel and face daily.",
+      "action": "In-depth clinical dialogue examining pain history, triggers, movement apprehension, and personal recovery goals.",
+      "takeaway": "You leave knowing your condition has been heard with depth, empathy, and specificity.",
+      "mindset": "From: Confusion & Anxiety ← To: Reassurance & Clarity"
+    },
+    "02": {
+      "title": "Assess · Evaluating the Kinetic Chain",
+      "short": "Knee or shoulder pain frequently stems from a biomechanical restriction elsewhere along the chain.",
+      "action": "Functional kinematic evaluation testing joint ranges, muscular balance, neural control, and postural patterns.",
+      "takeaway": "A transparent biomechanical breakdown showing the real root cause of your discomfort.",
+      "mindset": "From: Focusing only on the symptom ← To: Seeing the complete kinetic picture"
+    },
+    "03": {
+      "title": "Plan · Designing Your Individual Care Path",
+      "short": "No one-size-fits-all templates; we establish a progression that aligns with your real life and stamina.",
+      "action": "Structured 1-on-1 sessions, concise micro-movement drills for home/desk, and customized load pacing.",
+      "takeaway": "A realistic milestone timeline and transparent expectations for sustainable recovery.",
+      "mindset": "From: Scattered quick fixes ← To: A purposeful, structured roadmap"
+    },
+    "04": {
+      "title": "Progress · Restoring Movement & Confidence",
+      "short": "The ultimate aim is not clinic dependency, but empowering you to move with resilience and trust.",
+      "action": "Objective metric re-testing, progressive load tolerance, and functional simulation of your sport or work.",
+      "takeaway": "Unrestricted return to active life and sports with lifelong self-care literacy.",
+      "mindset": "From: Kinesiophobia & Fear of Re-injury ← To: Movement Confidence & Autonomy"
+    }
+  }
+}

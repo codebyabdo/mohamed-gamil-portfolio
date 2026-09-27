@@ -1,0 +1,47 @@
+{
+  "showcase": {
+    "eyebrow": "Clinical Evidence",
+    "title": "Real cases. Different journeys. Meaningful progress.",
+    "description": "Explore selected cases and learn about the challenges patients faced and how their rehabilitation journey was approached with measurable outcomes.",
+    "exploreAll": "Explore Cases",
+    "viewCase": "View Case",
+    "clinicalCases": "Clinical Cases"
+  },
+  "items": {
+    "rotator-cuff-functional-rehab": {
+      "title": "Rotator Cuff Rehabilitation & Restoring Natural Range",
+      "category": "Shoulder & Joint Rehabilitation",
+      "summary": "Rebuilding functional stability in the shoulder joint following 6 months of restricted elevation and pain.",
+      "imageAlt": "Shoulder rehabilitation and physiotherapy treatment",
+      "duration": "10 Weeks",
+      "caseProblem": "A 38-year-old patient experiencing chronic rotator cuff tendinopathy with sharp impingement pain during overhead lifting activities.",
+      "challenge": "Pain significantly disrupted sleep quality, daily dressing routines, and sports activities due to apprehension of further tissue damage.",
+      "approach": "Initial phase focused on load management and desensitization, followed by progressive scapular stabilization and rotator cuff strengthening.",
+      "journey": {
+        "stages": [
+          {
+            "phase": "Phase 1 (Weeks 1–3)",
+            "description": "Pain desensitization, passive range restoration, and movement education.",
+            "milestone": "Uninterrupted sleep without nocturnal pain"
+          },
+          {
+            "phase": "Phase 2 (Weeks 4–7)",
+            "description": "Isometric and dynamic stability loading, restoring overhead reach past 120 degrees.",
+            "milestone": "Smooth uncompensated overhead elevation"
+          },
+          {
+            "phase": "Phase 3 (Weeks 8–10)",
+            "description": "Functional overhead conditioning, sport-specific drills, and symmetry testing.",
+            "milestone": "Full return to training without hesitation"
+          }
+        ],
+        "mediaNote": "Visual documentation verifying corrected scapulohumeral rhythm and symmetrical elevation."
+      },
+      "progress": "Restored 100% pain-free range of motion, with a 45% increase in external rotation torque compared to initial evaluation.",
+      "patientExperience": {
+        "quote": "I thought surgery was inevitable. Dr. Mohamed explained the biomechanics clearly and made me feel like an active partner in my recovery.",
+        "author": "Tarek M. (38 yrs)"
+      }
+    }
+  }
+}

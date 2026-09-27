@@ -290,7 +290,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
         }
 
         /* ── Effect wrapper (positioned by JS) ────── */
-        .gooey-nav .effect {
+        .effect {
           position: absolute;
           opacity: 1;
           pointer-events: none;
@@ -301,11 +301,11 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
         }
         
         /* Text layer: renders the active label on top of the pill */
-        .gooey-nav .effect.text {
-          color: transparent;
+        .effect.text {
+          color: var(--gooey-fg-hover);
           transition: color 0.25s ease;
         }
-        .gooey-nav .effect.text.active {
+        .effect.text.active {
           color: var(--gooey-active-fg);
         }
 
@@ -319,7 +319,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
           .effect.filter::before {
             content: "";
             position: absolute;
-            inset: -75px;
+            inset: 0;
             z-index: -2;
             background: transparent;
           }
@@ -332,8 +332,17 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
             transform: scale(0);
             opacity: 0;
             z-index: 1;
-            border-radius: 9999px;
+            border-radius: 15px;
+            text-shadow: 0 0 0 1px var(--gooey-pill);
+            transition: all 0.3s ease;
+            animation: effect 0.3s ease both;
         }
+            @keyframes effect {
+              to {
+                transform: scale(1);
+                opacity: 1;
+              }
+            }
         .effect.active::after {
             animation: pill 0.3s ease both;
           }
@@ -415,7 +424,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
 
         /* ── Nav items ────────────────────────────── */
           li.active {
-            color: black;
+            color: var(--gooey-pill);
             text-shadow: none;
           }
           li.active::after {
@@ -427,7 +436,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
             position: absolute;
             inset: 0;
             border-radius: 8px;
-            background: white;
+            background: transparent;
             opacity: 0;
             transform: scale(0);
             transition: all 0.3s ease;

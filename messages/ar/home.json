@@ -1,106 +1,35 @@
 {
   "hero": {
-    "eyebrow": "FRONTEND ENGINEER",
-    "stack": "React.js • Next.js • TypeScript",
-    "title": {
-      "line1": "ABD EL-RAHMAN",
-      "line2": "ADEL"
-    },
-    "description": "Front-End Engineer specializing in React.js, Next.js, and TypeScript, building scalable web applications and polished digital experiences.",
-    "secondaryDescription": "I build SaaS platforms, dashboards, business applications, and responsive web products with a focus on frontend architecture, reusable components, performance, and reliable API integration.",
-    "availability": "Available for frontend opportunities",
-    "cta": {
-      "projects": "View Projects",
-      "resume": "View Resume",
-      "contact": "Get In Touch"
-    },
-    "stackLabel": "Core Frontend Stack"
-  },
-  "metrics": {
-    "eyebrow": "ENGINEERING SNAPSHOT",
-    "title": "Experience, focus & technical direction.",
-    "description": "A concise overview of the technologies, products, and engineering responsibilities behind my work.",
-    "availability": "Open to Opportunities",
-    "items": {
-      "experience": {
-        "value": "4+",
-        "label": "Years Building",
-        "description": "Frontend development and production web applications"
-      },
-      "react": {
-        "value": "React",
-        "label": "Primary Ecosystem",
-        "description": "Component-driven frontend development"
-      },
-      "nextjs": {
-        "value": "Next.js",
-        "label": "Application Framework",
-        "description": "Production-ready applications with modern React architecture"
-      },
-      "typescript": {
-        "value": "TypeScript",
-        "label": "Primary Language",
-        "description": "Typed, maintainable, and scalable frontend systems"
-      },
-      "saas": {
-        "value": "SaaS",
-        "label": "Product Experience",
-        "description": "Dashboards, business platforms, and multi-tenant products"
-      },
-      "lead": {
-        "value": "Lead",
-        "label": "Engineering Role",
-        "description": "Technical ownership, architecture, and frontend leadership"
-      }
-    }
-  },
-  "featuredProjects": {
-    "eyebrow": "CASE STUDIES",
-    "title": "Selected Projects",
-    "viewAll": "View All",
-    "viewProject": "View Case Study",
-    "featured": "Featured",
-    "projectCount": "View All ({count})"
+    "eyebrow": "د. محمد جميل · أخصائي العلاج الطبيعي وإعادة التأهيل",
+    "title": "الحركة تبدأ بالفهم.",
+    "description": "أساعدك على فهم حالتك، واستعادة الحركة بثقة، من خلال خطة علاجية واضحة ومبنية على احتياجك.",
+    "primaryCta": "احجز جلسة",
+    "secondaryCta": "اكتشف منهجي"
   },
   "philosophy": {
-    "eyebrow": "ENGINEERING PHILOSOPHY",
-    "title": "Build systems that remain understandable as they grow.",
-    "description": "I focus on clean architecture, reusable components, predictable state management, performance, accessibility, and interfaces that solve real business problems.",
-    "focus": "Focus",
-    "items": {
-      "reuse": {
-        "title": "Build for Reuse",
-        "description": "I build reusable components, shared patterns, and clear interfaces so new features can be added without duplicating logic or UI.",
-        "focus": "Reusable Systems"
-      },
-      "systems": {
-        "title": "Think in Systems",
-        "description": "I look beyond individual screens and consider feature boundaries, data flow, API contracts, state management, authentication, and how the frontend fits into the wider system.",
-        "focus": "Frontend Architecture"
-      },
-      "performance": {
-        "title": "Performance by Design",
-        "description": "I consider rendering strategy, data fetching, component complexity, loading states, responsive behavior, and user experience throughout development—not only at the end.",
-        "focus": "Performance & UX"
-      },
-      "team": {
-        "title": "Engineer as a Team",
-        "description": "I collaborate with backend developers, designers, and other engineers to define responsibilities, solve technical problems, and keep implementation aligned with product requirements.",
-        "focus": "Collaboration & Leadership"
-      }
-    }
-  },
-  "cta": {
-    "eyebrow": "Let's Build Something",
-    "title": "Building a product?",
-    "titleHighlight": "Let's build the frontend properly.",
-    "description": "I'm available for frontend engineering opportunities, freelance projects, and product teams building modern web applications with React.js, Next.js, and TypeScript.",
-    "valueStatement": "My focus is on scalable frontend architecture, reusable component systems, responsive interfaces, performance, and reliable API integration.",
-    "actions": {
-      "conversation": "Start a Conversation",
-      "resume": "View Resume"
+    "eyebrow": "فلسفة العلاج",
+    "title": "العلاج لا يبدأ بالتمرين، بل بفهم الإنسان الذي يتحرك.",
+    "description": "في ممارستي، لا أتعامل مع الألم كعرض منفصل يحتاج إلى حل سريع. أبدأ بفهم طريقة حركتك، ونمط حياتك، وما يؤثر على جسمك، ثم نبني معًا طريقًا واضحًا نحو حركة أكثر ثقة واستقلالية.",
+    "imageAlt": "الدكتور محمد جميل أثناء ممارسته المهنية",
+    "caption": {
+      "name": "د. محمد جميل",
+      "role": "العلاج الطبيعي وإعادة التأهيل"
     },
-    "availability": "Available for frontend engineering opportunities",
-    "contactHint": "React.js · Next.js · TypeScript · Frontend Architecture"
+    "pillars": {
+      "listening": {
+        "title": "الاستماع أولًا",
+        "description": "فهم تاريخ الحركة والعادات والقيود الخاصة بك قبل تحديد أي تدخل علاجي."
+      },
+      "transparency": {
+        "title": "فهم ما يحدث",
+        "description": "شرح واضح وبسيط لطريقة عمل الجسم والحركة حتى تكون جزءًا واعيًا من رحلة التعافي."
+      },
+      "progression": {
+        "title": "التقدم نحو الاستقلال",
+        "description": "تدرج علاجي يساعدك على بناء القوة والقدرة والثقة في الحركة على المدى الطويل."
+      }
+    },
+    "aboutLink": "تعرف على الطبيب",
+    "cta": "احجز جلسة"
   }
 }

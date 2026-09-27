@@ -1,0 +1,46 @@
+{
+  "testimonials": {
+    "eyebrow": "Patient Voice & Social Proof",
+    "title": "Real experiences. Meaningful progress.",
+    "description": "Every recovery journey is different. These experiences reflect the value of understanding the person, building trust, and progressing with a clear clinical direction.",
+    "readAll": "Read All Patient Experiences",
+    "watchTestimonial": "Watch Patient Testimonial",
+    "videoTestimonial": "Video Testimonial",
+    "writtenTestimonial": "Patient Testimonial",
+    "caseTestimonial": "Case Experience",
+    "sarah": {
+      "name": "Sarah M.",
+      "context": "Marathon Runner",
+      "quote": "The first time a physiotherapist listened to every single habit in my day and running routine before touching my knee. Understanding was what made all the difference."
+    },
+    "tarek": {
+      "name": "Tarek M.",
+      "context": "Rotator Cuff Case",
+      "quote": "I thought surgery was inevitable. Dr. Mohamed explained the biomechanics and made me an active partner until I completely regained my arm mobility."
+    },
+    "mahmoud": {
+      "name": "Mahmoud H.",
+      "context": "Architect",
+      "quote": "My recovery journey from a lumbar disc issue without perpetual painkillers — how Dr. Mohamed taught me to manage my daily movement."
+    },
+    "karim": {
+      "name": "Karim A.",
+      "context": "ACL Reconstruction Case",
+      "quote": "Dr. Mohamed restored my trust in every jump and stride on the pitch through rigorous objective testing."
+    },
+    "nadia": {
+      "name": "Dr. Nadia F.",
+      "context": "University Professor",
+      "quote": "The serenity of the space and singular focus during sessions is rare. Dr. Mohamed practices with the highest clinical and ethical rigor."
+    },
+    "omar": {
+      "name": "Omar Sh.",
+      "context": "Calisthenics Athlete",
+      "quote": "Overuse wrist and elbow rehabilitation — progressing from complete rest back to peak athletic output."
+    },
+    "cases": {
+      "rotatorCuffRehabilitation": "Rotator Cuff Rehabilitation",
+      "postAclAthleticProgression": "Post-ACL Athletic Progression"
+    }
+  }
+}

@@ -20,7 +20,20 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
       navigation: (await import(`../../messages/${locale}/navigation.json`))
         .default,
+
       common: (await import(`../../messages/${locale}/common.json`)).default,
+
+      services: (await import(`../../messages/${locale}/services.json`))
+        .default,
+
+      cases: (await import(`../../messages/${locale}/cases.json`))
+        .default,
+
+      trajectory: (await import(`../../messages/${locale}/trajectory.json`))
+        .default,
+
+      testimonials: (await import(`../../messages/${locale}/testimonials.json`))
+        .default,
     },
   };
 });

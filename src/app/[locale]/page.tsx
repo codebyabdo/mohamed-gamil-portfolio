@@ -1,19 +1,23 @@
-import { ArrowUpRight, Check, Menu, X } from "lucide-react";
+import { DoctorPhilosophySection } from "@/components/home/DoctorPhilosophySection";
+import { Hero } from "@/components/home/hero";
+import { TrajectoryDivider } from "@/components/shared/trajectory-divider";
+import { ServicesShowcase } from "@/components/home/services-showcase";
+import { CasesShowcase } from "@/components/home/cases-showcase";
+import { InteractiveTrajectory } from "@/components/home/interactive-trajectory";
+import { TestimonialShowcase } from "@/components/home/testimonial-showcase";
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { Container } from "@/components/ui/container";
-import { Section } from "@/components/ui/section";
-
-export default function UiPreviewPage() {
+export default function Home() {
   return (
     <main>
-      <Section spacing="lg">
-        <Container>
-          
-        </Container>
-      </Section>
+      <Hero />
+      <DoctorPhilosophySection />
+      <div className="max-w-4xl mx-auto px-4">
+        <TrajectoryDivider />
+      </div>
+      <ServicesShowcase />
+      <CasesShowcase />
+      <InteractiveTrajectory />
+      <TestimonialShowcase />
     </main>
   );
 }

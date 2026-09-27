@@ -1,0 +1,45 @@
+{
+  "showcase": {
+    "eyebrow": "Areas of Care",
+    "title": "Care built around how you move.",
+    "description": "Each condition is different. Treatment begins by understanding your movement, your goals, and what your body needs to progress.",
+    "exploreAll": "Explore All Services",
+    "clinicalCare": "1-on-1 Clinical Care",
+    "clinicalFocus": "Clinical Focus",
+    "footer": "Personalized sessions & progressive care",
+    "exploreService": "Explore Service",
+    "areasOfCare": "Areas of care"
+  },
+  "items": {
+    "sports-injuries": {
+      "title": "Sports Injuries",
+      "description": "Supporting recovery from injuries that affect movement and performance, with a focus on restoring function and progressing safely back to activity.",
+      "keyFocus": "Movement mechanics analysis, pain regulation, restoring elasticity and functional capacity.",
+      "imageAlt": "Sports rehabilitation and movement training"
+    },
+    "back-pain": {
+      "title": "Back Pain",
+      "description": "Understanding the factors associated with back pain and working toward better movement and everyday function.",
+      "keyFocus": "Postural and movement analysis, core stabilization, reducing kinetic load.",
+      "imageAlt": "Physiotherapy assessment and treatment for back pain"
+    },
+    "joint-pain": {
+      "title": "Joint Pain",
+      "description": "A movement- and function-focused approach to helping patients manage joint pain and improve mobility.",
+      "keyFocus": "Restoring joint range of motion (knee, shoulder, hip), strengthening supporting musculature.",
+      "imageAlt": "Physiotherapy care focused on joint mobility"
+    },
+    "rehabilitation": {
+      "title": "Rehabilitation",
+      "description": "A structured journey toward restoring movement, function, and confidence in using your body again.",
+      "keyFocus": "Post-operative rehab, reconditioning after prolonged inactivity, neuromuscular balance.",
+      "imageAlt": "Physiotherapy rehabilitation session"
+    },
+    "sports-rehabilitation": {
+      "title": "Sports Rehabilitation",
+      "description": "Focused rehabilitation to restore movement and performance and support a gradual return to sport.",
+      "keyFocus": "Return-to-sport physical readiness tests, sport-specific conditioning, re-injury prevention.",
+      "imageAlt": "Sports rehabilitation and performance training"
+    }
+  }
+}

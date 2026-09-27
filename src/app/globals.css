@@ -12,43 +12,26 @@
   /* ─────────────────────────────────────────────
      Brand
   ───────────────────────────────────────────── */
-
   --color-primary: #183b3a;
-  --color-primary-foreground: #f7f5f0;
+  --color-primary-foreground: #ffffff;
 
   --color-sage: #769a91;
-  --color-sage-foreground: #f7f5f0;
+  --color-sage-foreground: #ffffff;
 
   --color-clay: #c98c70;
   --color-clay-foreground: #ffffff;
 
-  /* ─────────────────────────────────────────────
-     Surfaces
-  ───────────────────────────────────────────── */
-
-  --color-background: #f7f5f0;
-  --color-surface: #efeee8;
+  --color-background: #ffffff;
+  --color-surface: #f5f5f5;
   --color-surface-elevated: #ffffff;
-
-  /* ─────────────────────────────────────────────
-     Content
-  ───────────────────────────────────────────── */
 
   --color-foreground: #172322;
   --color-muted: #66716f;
   --color-muted-foreground: #7b8583;
 
-  /* ─────────────────────────────────────────────
-     Borders
-  ───────────────────────────────────────────── */
-
-  --color-border: #d9ddd8;
-  --color-border-subtle: #e5e8e4;
-  --color-border-strong: #bfc7c3;
-
-  /* ─────────────────────────────────────────────
-     Feedback
-  ───────────────────────────────────────────── */
+  --color-border: #e5e5e5;
+  --color-border-subtle: #efefef;
+  --color-border-strong: #cccccc;
 
   --color-success: #467a63;
   --color-warning: #b77a38;
