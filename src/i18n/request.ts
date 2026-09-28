@@ -26,14 +26,16 @@ export default getRequestConfig(async ({ requestLocale }) => {
       services: (await import(`../../messages/${locale}/services.json`))
         .default,
 
-      cases: (await import(`../../messages/${locale}/cases.json`))
-        .default,
+      cases: (await import(`../../messages/${locale}/cases.json`)).default,
 
       trajectory: (await import(`../../messages/${locale}/trajectory.json`))
         .default,
 
       testimonials: (await import(`../../messages/${locale}/testimonials.json`))
         .default,
+
+      social: (await import(`../../messages/${locale}/social.json`)).default,
+      footer: (await import(`../../messages/${locale}/footer.json`)).default,
     },
   };
 });

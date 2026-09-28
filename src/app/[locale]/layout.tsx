@@ -5,15 +5,17 @@ import {
   Inter,
   Manrope,
 } from "next/font/google";
-import { hasLocale } from "next-intl";
-import { NextIntlClientProvider } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 import { routing } from "@/i18n/routing";
 
 import "../globals.css";
-import { SiteHeader } from "@/components/navigation/site-header";
+import { SiteHeader } from "@/components/layout/site-header";
+import { MotionProvider } from "@/components/motion";
+import { SmoothScrollProvider } from "@/components/motion/smooth-scroll-provider";
+import { SiteFooter } from "@/components/layout/site-footer";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -81,11 +83,15 @@ export default async function LocaleLayout({
       className={`${dmSans.variable} ${manrope.variable} ${inter.variable} ${ibmPlexSansArabic.variable}`}
     >
       <body>
-        <NextIntlClientProvider messages={messages}>
-          <SiteHeader />
-
-          {children}
-        </NextIntlClientProvider>
+        <SmoothScrollProvider>
+          <MotionProvider>
+            <NextIntlClientProvider messages={messages}>
+              <SiteHeader />
+              {children}
+              <SiteFooter/>
+            </NextIntlClientProvider>
+          </MotionProvider>
+        </SmoothScrollProvider>
       </body>
     </html>
   );

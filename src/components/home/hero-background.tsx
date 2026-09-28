@@ -1,11 +1,26 @@
+"use client";
+
+import { useMemo } from "react";
 import GhostFibers from "../react-bits/GhostFibers";
 
 export function HeroBackground() {
+  // Read tokens once on mount (they don't change)
+  const { primary, sage } = useMemo(() => {
+    if (typeof window === "undefined") {
+      return { primary: "#183b3a", sage: "#769a91" };
+    }
+    const styles = getComputedStyle(document.documentElement);
+    return {
+      primary: styles.getPropertyValue("--color-primary").trim() || "#183b3a",
+      sage: styles.getPropertyValue("--color-sage").trim() || "#769a91",
+    };
+  }, []);
+  
   return (
     <div className="absolute inset-0 z-1 pointer-events-none">
       <GhostFibers
-        lineColor="#183b3a"
-        glowColor="#769a91"
+        lineColor={primary}
+        glowColor={sage}
         speed={0.55}
         scale={1}
         rotation={0}

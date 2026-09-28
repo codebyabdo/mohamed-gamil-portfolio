@@ -40,16 +40,11 @@ export function SectionHeading({
             {label}
           </span>
 
-          <span
-            aria-hidden="true"
-            className="h-px w-8 bg-sage/50"
-          />
+          <span aria-hidden="true" className="h-px w-8 bg-sage/50" />
         </div>
       )}
 
-      <h2 className="text-h2 text-primary">
-        {title}
-      </h2>
+      <h2 className="text-h2 text-primary">{title}</h2>
 
       {description && (
         <p className="text-body-lg mt-5 max-w-2xl text-muted-foreground">
@@ -58,12 +53,7 @@ export function SectionHeading({
       )}
 
       {actions && (
-        <div
-          className={cn(
-            "mt-6",
-            isCentered && "flex justify-center",
-          )}
-        >
+        <div className={cn("mt-6", isCentered && "flex justify-center")}>
           {actions}
         </div>
       )}

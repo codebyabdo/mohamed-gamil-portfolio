@@ -1,0 +1,40 @@
+{
+  "section": {
+    "eyebrow": "Clinical Media & Social Proof",
+    "title": "Movement Explained Visually: Follow Real Rehabilitation Journeys",
+    "description": "Our channels are not marketing noise, but an educational window documenting authentic patient milestones, movement assessments, and practical rehabilitation insights.",
+    "community": "Community",
+    "audience": "80K+ Movement Enthusiasts",
+    "watchReel": "Watch Reel",
+    "views": "{count} views",
+    "followChannel": "Visit Channel"
+  },
+  "reels": {
+    "reel-1": {
+      "title": "Dynamic Knee Stability Testing: What We Look For",
+      "category": "Movement Journey Series"
+    },
+    "reel-2": {
+      "title": "Why Random Back Extensions Fail in Disc Therapy",
+      "category": "Clinical Concepts"
+    },
+    "reel-3": {
+      "title": "Slow-Motion Gait Capture: Spotting Patellar Overload",
+      "category": "Sports Medicine"
+    }
+  },
+  "channels": {
+    "Instagram": {
+      "role": "Weekly Movement Breakdown & Clinical Exercises"
+    },
+    "YouTube": {
+      "role": "In-Depth Movement Series & Patient Case Documentaries"
+    },
+    "LinkedIn": {
+      "role": "Clinical Research, Papers & Professional Thought Leadership"
+    },
+    "WhatsApp": {
+      "role": "Direct Priority Consultation & Appointment Inquiries"
+    }
+  }
+}

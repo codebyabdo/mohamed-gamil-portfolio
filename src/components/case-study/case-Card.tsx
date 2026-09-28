@@ -12,10 +12,7 @@ interface CaseCardProps {
   id?: string;
 }
 
-export function CaseCard({
-  caseStudy,
-  id,
-}: CaseCardProps) {
+export function CaseCard({ caseStudy, id }: CaseCardProps) {
   const t = useTranslations("cases");
 
   const title = t(`items.${caseStudy.id}.title`);
@@ -26,7 +23,12 @@ export function CaseCard({
   return (
     <article
       id={id}
-      className="group overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-sage/60 hover:shadow-sm"
+      className={cn(
+        "group h-full overflow-hidden rounded-2xl border border-border bg-surface",
+        // CSS-only border/shadow transitions (cheap, GPU-friendly)
+        "transition-[border-color,box-shadow] duration-300 ease-out",
+        "hover:border-sage/60 hover:shadow-sm",
+      )}
     >
       <Link
         href={`/cases?id=${caseStudy.id}`}
@@ -44,9 +46,8 @@ export function CaseCard({
               src={caseStudy.image}
               alt={imageAlt}
               fill
-              priority
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
             />
 
             <div className="absolute inset-s-4 top-4">

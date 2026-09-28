@@ -1,169 +1,158 @@
 @import "tailwindcss";
-
-@import "tailwindcss";
-
 @import "tw-animate-css";
-
-@import "shadcn/tailwind.css";
-
-@custom-variant dark (&:is(.dark *));
-
+@import "shadcn/tailwind.css"; /* ========================================================= Tailwind / shadcn ========================================================= */
+@custom-variant dark (&:is(.dark *)); /* ========================================================= Al-Jamil Design Tokens ========================================================= */
 :root {
-  /* ─────────────────────────────────────────────
-     Brand
-  ───────────────────────────────────────────── */
+  /* ------------------------------------------------------- Brand Colors ------------------------------------------------------- */
   --color-primary: #183b3a;
   --color-primary-foreground: #ffffff;
-
   --color-sage: #769a91;
   --color-sage-foreground: #ffffff;
-
   --color-clay: #c98c70;
   --color-clay-foreground: #ffffff;
-
   --color-background: #ffffff;
   --color-surface: #f5f5f5;
   --color-surface-elevated: #ffffff;
-
   --color-foreground: #172322;
   --color-muted: #66716f;
   --color-muted-foreground: #7b8583;
-
   --color-border: #e5e5e5;
   --color-border-subtle: #efefef;
-  --color-border-strong: #cccccc;
-
+  --color-border-strong: #cccccc; /* ------------------------------------------------------- Feedback Colors ------------------------------------------------------- */
   --color-success: #467a63;
   --color-warning: #b77a38;
   --color-error: #b55454;
-  --color-info: #557c83;
-
-  /* ─────────────────────────────────────────────
-     Typography
-  ───────────────────────────────────────────── */
-
+  --color-info: #557c83; /* ------------------------------------------------------- Typography ------------------------------------------------------- */
   --font-display: var(--font-dm-sans);
   --font-heading: var(--font-manrope);
-  --font-body: var(--font-inter);
-
-  /* ─────────────────────────────────────────────
-     Radius
-  ───────────────────────────────────────────── */
-
+  --font-body: var(
+    --font-inter
+  ); /* ------------------------------------------------------- Radius ------------------------------------------------------- */
   --radius-sm: 0.375rem;
   --radius-md: 0.625rem;
   --radius-lg: 0.875rem;
   --radius-xl: 1.25rem;
   --radius-2xl: 1.75rem;
   --radius-3xl: 2.25rem;
-  --radius-full: 9999px;
-
-  /* ─────────────────────────────────────────────
-     Layout
-  ───────────────────────────────────────────── */
-
+  --radius-full: 9999px; /* ------------------------------------------------------- Layout ------------------------------------------------------- */
   --container-max-width: 1280px;
-  --container-padding: 1.25rem;
-
-  /* ─────────────────────────────────────────────
-     Motion
-  ───────────────────────────────────────────── */
-
+  --container-padding: 1.25rem; /* ------------------------------------------------------- Motion ------------------------------------------------------- */
   --motion-duration-fast: 160ms;
   --motion-duration-normal: 300ms;
   --motion-duration-slow: 500ms;
   --motion-duration-slower: 800ms;
-
   --motion-ease-standard: cubic-bezier(0.2, 0, 0, 1);
   --motion-ease-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
-  --motion-ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
-
-  /* ─────────────────────────────────────────────
-     Z-index
-  ───────────────────────────────────────────── */
-
+  --motion-ease-soft: cubic-bezier(
+    0.22,
+    1,
+    0.36,
+    1
+  ); /* ------------------------------------------------------- Z-index ------------------------------------------------------- */
   --z-base: 0;
   --z-content: 10;
   --z-header: 100;
   --z-overlay: 200;
   --z-modal: 300;
-  --z-toast: 400;
-
-  /* ─────────────────────────────────────────────
-     Focus
-  ───────────────────────────────────────────── */
-
+  --z-toast: 400; /* ------------------------------------------------------- Focus ------------------------------------------------------- */
   --focus-ring-color: var(--color-sage);
   --focus-ring-width: 2px;
-  --focus-ring-offset: 3px;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
-
+  --focus-ring-offset: 3px; /* ------------------------------------------------------- shadcn Semantic Tokens ------------------------------------------------------- */
+  --background: var(--color-background);
+  --foreground: var(--color-foreground);
+  --card: var(--color-surface-elevated);
+  --card-foreground: var(--color-foreground);
+  --popover: var(--color-surface-elevated);
+  --popover-foreground: var(--color-foreground);
+  --primary: var(--color-primary);
+  --primary-foreground: var(--color-primary-foreground);
+  --secondary: var(--color-surface);
+  --secondary-foreground: var(--color-primary);
+  --muted: var(--color-surface);
+  --muted-foreground: var(--color-muted);
+  --accent: color-mix(in srgb, var(--color-sage) 12%, var(--color-background));
+  --accent-foreground: var(--color-primary);
+  --destructive: var(--color-error);
+  --border: var(--color-border);
+  --input: var(--color-border);
+  --ring: var(
+    --color-sage
+  ); /* ------------------------------------------------------- Charts ------------------------------------------------------- */
+  --chart-1: var(--color-primary);
+  --chart-2: var(--color-sage);
+  --chart-3: var(--color-clay);
+  --chart-4: var(--color-info);
+  --chart-5: var(
+    --color-success
+  ); /* ------------------------------------------------------- Sidebar ------------------------------------------------------- */
+  --sidebar: var(--color-surface);
+  --sidebar-foreground: var(--color-foreground);
+  --sidebar-primary: var(--color-primary);
+  --sidebar-primary-foreground: var(--color-primary-foreground);
+  --sidebar-accent: var(--color-surface-elevated);
+  --sidebar-accent-foreground: var(--color-primary);
+  --sidebar-border: var(--color-border);
+  --sidebar-ring: var(--color-sage); /* shadcn base radius */
+  --radius: var(--radius-md);
+} /* ========================================================= Tailwind v4 Theme ========================================================= */
 @theme inline {
-  /* Colors */
+  /* ------------------------------------------------------- Brand Colors ------------------------------------------------------- */
   --color-primary: var(--color-primary);
   --color-primary-foreground: var(--color-primary-foreground);
-
   --color-sage: var(--color-sage);
   --color-sage-foreground: var(--color-sage-foreground);
-
   --color-clay: var(--color-clay);
   --color-clay-foreground: var(--color-clay-foreground);
-
   --color-background: var(--color-background);
   --color-surface: var(--color-surface);
   --color-surface-elevated: var(--color-surface-elevated);
-
   --color-foreground: var(--color-foreground);
   --color-muted: var(--color-muted);
   --color-muted-foreground: var(--color-muted-foreground);
-
   --color-border: var(--color-border);
   --color-border-subtle: var(--color-border-subtle);
   --color-border-strong: var(--color-border-strong);
-
   --color-success: var(--color-success);
   --color-warning: var(--color-warning);
   --color-error: var(--color-error);
-  --color-info: var(--color-info);
-
-  /* Typography */
+  --color-info: var(
+    --color-info
+  ); /* ------------------------------------------------------- shadcn Semantic Colors ------------------------------------------------------- */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(
+    --chart-5
+  ); /* ------------------------------------------------------- Sidebar ------------------------------------------------------- */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(
+    --sidebar-ring
+  ); /* ------------------------------------------------------- Typography ------------------------------------------------------- */
   --font-display: var(--font-display);
-  --font-heading: var(--font-sans);
-  --font-body: var(--font-body);
-
-  /* Radius */
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body); /* Tailwind default sans mapping */
+  --font-sans: var(
+    --font-body
+  ); /* ------------------------------------------------------- Radius ------------------------------------------------------- */
   --radius-sm: var(--radius-sm);
   --radius-md: var(--radius-md);
   --radius-lg: var(--radius-lg);
@@ -171,67 +160,41 @@
   --radius-2xl: var(--radius-2xl);
   --radius-3xl: var(--radius-3xl);
   --radius-full: var(--radius-full);
-  --font-sans: var(--font-sans);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
-  --color-card: var(--card);
-  --radius-4xl: calc(var(--radius) * 2.6);
-}
-
+} /* ========================================================= Locale Typography ========================================================= */
 html {
   min-height: 100%;
-  scroll-behavior: smooth;
   background: var(--color-background);
 }
-
 html[lang="ar"] {
   --font-body: var(--font-ibm-plex-arabic);
   --font-heading: var(--font-ibm-plex-arabic);
   --font-display: var(--font-ibm-plex-arabic);
 }
-
 html[lang="en"] {
   --font-body: var(--font-inter);
   --font-heading: var(--font-manrope);
   --font-display: var(--font-dm-sans);
+} /* ========================================================= Base ========================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   min-height: 100vh;
   margin: 0;
   background: var(--color-background);
   color: var(--color-foreground);
-
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.6;
-
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
+} /* ========================================================= Typography Reset ========================================================= */
 h1,
 h2,
 h3,
@@ -244,79 +207,49 @@ h6 {
   letter-spacing: -0.02em;
 }
 
-p {
-  margin: 0;
-}
-
 button,
 input,
 textarea,
 select {
   font: inherit;
 }
-
 button,
 a {
   -webkit-tap-highlight-color: transparent;
 }
-
 a {
-  color: inherit;
   text-decoration: none;
 }
-
 img,
 svg {
   display: block;
 }
-
 img {
   max-width: 100%;
-}
-
+} /* ========================================================= Focus ========================================================= */
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+} /* ========================================================= Selection ========================================================= */
 ::selection {
   background: var(--color-primary);
-  color: var(--color-background);
-}
-
-:focus-visible {
-  outline: 2px solid var(--color-sage);
-  outline-offset: 3px;
-}
-
+  color: var(--color-primary-foreground);
+} /* ========================================================= Responsive Container Tokens ========================================================= */
 @media (min-width: 640px) {
   :root {
     --container-padding: 1.5rem;
   }
 }
-
 @media (min-width: 1024px) {
   :root {
     --container-padding: 2rem;
   }
 }
-
 @media (min-width: 1280px) {
   :root {
     --container-padding: 3rem;
   }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
+} /* ========================================================= Typography Utilities ========================================================= */
 .text-display-xl {
   font-family: var(--font-display);
   font-size: clamp(3.5rem, 7vw, 5.5rem);
@@ -324,7 +257,6 @@ img {
   letter-spacing: -0.04em;
   font-weight: 600;
 }
-
 .text-display {
   font-family: var(--font-display);
   font-size: clamp(3rem, 6vw, 4.5rem);
@@ -332,7 +264,6 @@ img {
   letter-spacing: -0.035em;
   font-weight: 600;
 }
-
 .text-h1 {
   font-family: var(--font-heading);
   font-size: clamp(2.5rem, 5vw, 3.75rem);
@@ -340,7 +271,6 @@ img {
   letter-spacing: -0.03em;
   font-weight: 600;
 }
-
 .text-h2 {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 3rem);
@@ -348,7 +278,6 @@ img {
   letter-spacing: -0.025em;
   font-weight: 600;
 }
-
 .text-h3 {
   font-family: var(--font-heading);
   font-size: clamp(1.625rem, 3vw, 2.25rem);
@@ -356,7 +285,6 @@ img {
   letter-spacing: -0.02em;
   font-weight: 600;
 }
-
 .text-h4 {
   font-family: var(--font-heading);
   font-size: clamp(1.25rem, 2vw, 1.625rem);
@@ -364,103 +292,83 @@ img {
   letter-spacing: -0.015em;
   font-weight: 600;
 }
-
 .text-body-lg {
   font-size: 1.125rem;
   line-height: 1.75;
 }
-
 .text-body {
   font-size: 1rem;
   line-height: 1.65;
 }
-
 .text-body-sm {
   font-size: 0.875rem;
   line-height: 1.6;
 }
-
 .text-caption {
   font-size: 0.75rem;
   line-height: 1.5;
-}
-
+} /* ========================================================= Arabic Typography Adjustments ========================================================= */
 html[lang="ar"] {
   .text-display-xl {
     line-height: 1.15;
     letter-spacing: 0;
   }
-
   .text-display {
     line-height: 1.15;
     letter-spacing: 0;
   }
-
   .text-h1 {
     line-height: 1.2;
     letter-spacing: 0;
   }
-
   .text-h2 {
     line-height: 1.25;
     letter-spacing: 0;
   }
-
   .text-h3 {
     line-height: 1.3;
     letter-spacing: 0;
   }
-
   .text-h4 {
     line-height: 1.4;
     letter-spacing: 0;
   }
-
   .text-body-lg {
     line-height: 1.9;
   }
-
   .text-body {
     line-height: 1.85;
   }
-
   .text-body-sm {
     line-height: 1.75;
   }
-}
-
+} /* ========================================================= Shadows ========================================================= */
 .shadow-soft {
   box-shadow:
     0 4px 20px rgb(24 59 58 / 0.06),
     0 1px 4px rgb(24 59 58 / 0.04);
 }
-
 .shadow-elevated {
   box-shadow:
     0 20px 50px rgb(24 59 58 / 0.1),
     0 4px 12px rgb(24 59 58 / 0.05);
-}
-
+} /* ========================================================= Motion Utilities ========================================================= */
 .motion-fast {
   transition-duration: var(--motion-duration-fast);
   transition-timing-function: var(--motion-ease-standard);
 }
-
 .motion-normal {
   transition-duration: var(--motion-duration-normal);
   transition-timing-function: var(--motion-ease-standard);
 }
-
 .motion-slow {
   transition-duration: var(--motion-duration-slow);
   transition-timing-function: var(--motion-ease-emphasized);
-}
-
+} /* ========================================================= Reduced Motion ========================================================= */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
-
   *,
   *::before,
   *::after {
@@ -469,83 +377,7 @@ html[lang="ar"] {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-:focus-visible {
-  outline: var(--focus-ring-width) solid var(--focus-ring-color);
-  outline-offset: var(--focus-ring-offset);
-}
-
-::selection {
-  background: var(--color-primary);
-  color: var(--color-primary-foreground);
-}
-
-.dark {
-
-  --background: oklch(0.145 0 0);
-
-  --foreground: oklch(0.985 0 0);
-
-  --card: oklch(0.205 0 0);
-
-  --card-foreground: oklch(0.985 0 0);
-
-  --popover: oklch(0.205 0 0);
-
-  --popover-foreground: oklch(0.985 0 0);
-
-  --primary: oklch(0.922 0 0);
-
-  --primary-foreground: oklch(0.205 0 0);
-
-  --secondary: oklch(0.269 0 0);
-
-  --secondary-foreground: oklch(0.985 0 0);
-
-  --muted: oklch(0.269 0 0);
-
-  --muted-foreground: oklch(0.708 0 0);
-
-  --accent: oklch(0.269 0 0);
-
-  --accent-foreground: oklch(0.985 0 0);
-
-  --destructive: oklch(0.704 0.191 22.216);
-
-  --border: oklch(1 0 0 / 10%);
-
-  --input: oklch(1 0 0 / 15%);
-
-  --ring: oklch(0.556 0 0);
-
-  --chart-1: oklch(0.87 0 0);
-
-  --chart-2: oklch(0.556 0 0);
-
-  --chart-3: oklch(0.439 0 0);
-
-  --chart-4: oklch(0.371 0 0);
-
-  --chart-5: oklch(0.269 0 0);
-
-  --sidebar: oklch(0.205 0 0);
-
-  --sidebar-foreground: oklch(0.985 0 0);
-
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-
-  --sidebar-accent: oklch(0.269 0 0);
-
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-
-  --sidebar-border: oklch(1 0 0 / 10%);
-
-  --sidebar-ring: oklch(0.556 0 0);
-}
-
+} /* ========================================================= shadcn Base Layer ========================================================= */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -556,4 +388,20 @@ html[lang="ar"] {
   html {
     @apply font-sans;
   }
+} /* ========================================================= Lenis Smooth Scroll ========================================================= */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }

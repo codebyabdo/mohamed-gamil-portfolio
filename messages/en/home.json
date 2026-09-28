@@ -31,5 +31,14 @@
     },
     "aboutLink": "Meet the Doctor",
     "cta": "Book a Session"
+  },
+  "finalCta": {
+    "eyebrow": "Begin Your Movement Trajectory",
+    "title": "Your first step toward a calm, precise, and lasting recovery starts today.",
+    "description": "Book a comprehensive one-on-one kinematic evaluation with Dr. Mohamed Gamil, establishing a transparent roadmap back to full movement confidence.",
+    "primaryCta": "Book Your Session",
+    "secondaryCta": "Explore Methodology",
+    "whatsapp": "Chat on WhatsApp",
+    "phone": "Call directly"
   }
 }

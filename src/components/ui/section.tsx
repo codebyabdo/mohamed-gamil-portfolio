@@ -1,5 +1,4 @@
 import type { HTMLAttributes } from "react";
-
 import { cn } from "@/lib/utils";
 
 type SectionProps = HTMLAttributes<HTMLElement> & {
@@ -11,7 +10,7 @@ const spacingStyles = {
   md: "py-16 md:py-24",
   lg: "py-20 md:py-32",
   xl: "py-24 md:py-40",
-};
+} as const;
 
 export function Section({
   className,
@@ -20,10 +19,7 @@ export function Section({
   ...props
 }: SectionProps) {
   return (
-    <section
-      className={cn(spacingStyles[spacing], className)}
-      {...props}
-    >
+    <section className={cn(spacingStyles[spacing], className)} {...props}>
       {children}
     </section>
   );

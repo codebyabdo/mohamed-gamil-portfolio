@@ -1,9 +1,13 @@
 import Image from "next/image";
-import { ArrowLeft, Play } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import { Section } from "../ui/section";
+import { Section } from "@/components/ui/section";
 import { TESTIMONIALS } from "@/content/testimonial";
+import { Container } from "@/components/ui/container";
+import { SectionHeading } from "@/components/shared/Section-heading";
+import { Reveal } from "@/components/motion";
+import { SectionHeadingReveal } from "@/components/shared/section-heading-reveal";
 
 export async function TestimonialShowcase() {
   const t = await getTranslations("testimonials.testimonials");
@@ -13,9 +17,7 @@ export async function TestimonialShowcase() {
     (testimonial) => testimonial.type === "video",
   );
 
-  if (!featuredTestimonial) {
-    return null;
-  }
+  if (!featuredTestimonial) return null;
 
   const isArabic = locale === "ar";
 
@@ -23,16 +25,29 @@ export async function TestimonialShowcase() {
   const context = featuredTestimonial.roleOrContextKey
     ? t(`${featuredTestimonial.authorKey}.context`)
     : "";
-
   const quote = t(`${featuredTestimonial.authorKey}.quote`);
 
   return (
-    <Section>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <Section spacing="md">
+      <Container>
+        <div className="mb-10 flex flex-col gap-6 md:mb-14 md:flex-row md:items-end md:justify-between">
+          <SectionHeadingReveal>
+            <SectionHeading
+              label={t("eyebrow")}
+              title={t("title")}
+              description={t("description")}
+              className="mb-0"
+            />
+          </SectionHeadingReveal>
+        </div>
+
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
-          {/* Featured Video Testimonial */}
-          <div className="relative lg:col-span-6">
-            <div className="group relative aspect-[16/10] cursor-pointer overflow-hidden rounded-[20px] bg-black shadow-lg">
+          {/* Featured Video Testimonial — slides from the outer edge */}
+          <Reveal
+            direction={isArabic ? "right" : "left"}
+            className="relative lg:col-span-6"
+          >
+            <div className="group relative aspect-16/10 cursor-pointer overflow-hidden rounded-[20px] bg-black shadow-lg">
               <Image
                 src={featuredTestimonial.videoThumbnail!}
                 alt={author}
@@ -41,25 +56,18 @@ export async function TestimonialShowcase() {
                 className="object-cover opacity-80 transition-opacity duration-300 group-hover:opacity-90"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
 
-              {/* Play Button */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--color-background)] text-[var(--color-primary)] shadow-lg transition-transform duration-300 group-hover:scale-110">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-background text-primary shadow-lg transition-transform duration-300 group-hover:scale-110">
                   <Play className="h-6 w-6 translate-x-0.5 fill-current" />
                 </div>
               </div>
 
-              {/* Video Information */}
               <div className="absolute inset-x-4 bottom-4 flex items-center justify-between text-xs text-white">
                 <div>
-                  <span className="block text-sm font-bold">
-                    {author}
-                  </span>
-
-                  <span className="text-white/75">
-                    {context}
-                  </span>
+                  <span className="block text-sm font-bold">{author}</span>
+                  <span className="text-white/75">{context}</span>
                 </div>
 
                 {featuredTestimonial.videoDuration && (
@@ -69,17 +77,21 @@ export async function TestimonialShowcase() {
                 )}
               </div>
             </div>
-          </div>
+          </Reveal>
 
-          {/* Patient Quote */}
-          <div className="space-y-5 lg:col-span-6">
-            <span className="text-xs font-semibold uppercase tracking-wider text-[var(--color-secondary)]">
+          {/* Patient Quote — slides from the opposite edge */}
+          <Reveal
+            direction={isArabic ? "left" : "right"}
+            delay={0.15}
+            className="space-y-5 lg:col-span-6"
+          >
+            <span className="text-xs font-semibold uppercase tracking-wider text-(--color-secondary)">
               {t("eyebrow")}
             </span>
 
             <blockquote
               className={[
-                "text-lg font-medium leading-relaxed text-[var(--color-primary)] sm:text-xl md:text-2xl",
+                "text-lg font-medium leading-relaxed text-primary sm:text-xl md:text-2xl",
                 isArabic ? "not-italic" : "italic",
               ].join(" ")}
             >
@@ -87,11 +99,10 @@ export async function TestimonialShowcase() {
             </blockquote>
 
             <div className="space-y-1">
-              <span className="block text-sm font-bold text-[var(--color-primary)]">
+              <span className="block text-sm font-bold text-primary">
                 {author}
               </span>
-
-              <span className="block text-xs text-[var(--color-muted)]">
+              <span className="block text-xs text-muted">
                 {context}
               </span>
             </div>
@@ -99,20 +110,19 @@ export async function TestimonialShowcase() {
             <div className="pt-2">
               <a
                 href={`/${locale}/testimonials`}
-                className="inline-flex h-11 items-center gap-2 rounded-[10px] border border-[var(--color-border)] bg-[var(--color-surface)] px-5 text-xs font-semibold text-[var(--color-primary)] transition-colors hover:bg-[var(--color-border)]/50"
+                className="inline-flex h-11 items-center gap-2 rounded-[10px] border border-border bg-surface px-5 text-xs font-semibold text-primary transition-colors hover:bg-border/50"
               >
                 <span>{t("readAll")}</span>
-
-                <ArrowLeft
-                  className={`h-3.5 w-3.5 ${
-                    isArabic ? "rotate-180" : ""
-                  }`}
+                {/* Fixed: ArrowRight + rtl:rotate-180 (was ArrowLeft + rotate-180) */}
+                <ArrowRight
+                  aria-hidden="true"
+                  className="h-3.5 w-3.5 rtl:rotate-180"
                 />
               </a>
             </div>
-          </div>
+          </Reveal>
         </div>
-      </div>
+      </Container>
     </Section>
   );
 }
