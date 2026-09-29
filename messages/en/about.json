@@ -1,0 +1,230 @@
+{
+  "hero": {
+    "eyebrow": "About Dr. Mohamed Gamil",
+    "title": "Behind every condition, there is a person.",
+    "description": "I'm Mohamed Gamil, and I believe effective physiotherapy begins with listening before treatment. My goal is to make every patient feel understood and know why each step of their recovery matters.",
+    "cta": "Get in touch",
+    "imageAlt": "Dr. Mohamed Gamil smiling in a clinical setting",
+    "caption": {
+      "name": "Dr. Mohamed Gamil",
+      "role": "Physiotherapy & Rehabilitation"
+    }
+  },
+  "identity": {
+    "eyebrow": "Professional Identity",
+    "title": "A career built on science and precision",
+    "description": "Over a decade of clinical practice, combining evidence-based protocols with a deeply human approach to rehabilitation.",
+
+    "bio": {
+      "title": "Who I am",
+      "p1": "I'm Dr. Mohamed Gamil, a licensed physiotherapist and rehabilitation specialist. My practice focuses on restoring movement, reducing pain, and guiding patients back to the activities they love.",
+      "p2": "I combine modern biomechanical analysis with evidence-based therapeutic protocols, always keeping the patient's long-term independence at the center of every decision.",
+      "specialtiesLabel": "Specialties",
+      "specialties": {
+        "ortho": "Orthopedics",
+        "sports": "Sports injuries",
+        "neuro": "Neuro-rehabilitation",
+        "pediatric": "Pediatric therapy"
+      }
+    },
+
+    "stats": {
+      "years": {
+        "value": "12",
+        "label": "Years of practice"
+      },
+      "patients": {
+        "value": "5000",
+        "label": "Patients treated"
+      },
+      "specialties": {
+        "value": "8",
+        "label": "Clinical specialties"
+      },
+      "satisfaction": {
+        "value": "98",
+        "label": "Patient satisfaction"
+      }
+    },
+
+    "casesLabel": "Areas of clinical focus",
+    "cases": {
+      "sports": {
+        "title": "Sports Injuries",
+        "description": "Return-to-play programs for athletes of all levels."
+      },
+      "postSurgery": {
+        "title": "Post-Surgical Rehab",
+        "description": "Structured recovery after orthopedic procedures."
+      },
+      "chronic": {
+        "title": "Chronic Pain",
+        "description": "Long-term management of persistent musculoskeletal pain."
+      },
+      "preventive": {
+        "title": "Preventive Care",
+        "description": "Movement screening and injury prevention programs."
+      }
+    }
+  },
+  "philosophy": {
+    "eyebrow": "Guiding Values",
+    "title": "The Values Governing Every Clinical Decision",
+    "description": "Three principles shape how I approach every patient, every session, and every recovery plan.",
+    "items": {
+      "dignity": {
+        "title": "Movement as Human Dignity",
+        "description": "The ability to walk, play, and live without fear is not a luxury — it is the core of physical and psychological autonomy."
+      },
+      "precision": {
+        "title": "Precision Over Haste",
+        "description": "No magical shortcuts. Each therapeutic phase respects biological healing timelines and objective mechanical metrics."
+      },
+      "sufficiency": {
+        "title": "Patient Self-Sufficiency",
+        "description": "The greatest therapist renders themselves unnecessary. We empower you with lifetime movement self-management."
+      }
+    }
+  },
+  "credentials": {
+    "eyebrow": "Credentials",
+    "title": "Education, certifications & experience",
+    "description": "A foundation built on academic training, internationally recognized certifications, and years of clinical practice.",
+    "tabsAriaLabel": "Credential categories",
+
+    "tabs": {
+      "education": "Education",
+      "certifications": "Certifications",
+      "experience": "Experience"
+    },
+
+    "education": {
+      "items": {
+        "bachelor": {
+          "year": "2014",
+          "title": "BSc in Physical Therapy",
+          "org": "Cairo University",
+          "location": "Cairo, Egypt",
+          "note": "Graduated with honors. Specialized in musculoskeletal rehabilitation from the final year."
+        },
+        "master": {
+          "year": "2017",
+          "title": "MSc in Musculoskeletal Rehabilitation",
+          "org": "Cairo University",
+          "location": "Cairo, Egypt",
+          "note": "Thesis on biomechanical outcomes of return-to-sport protocols in amateur athletes."
+        },
+        "phd": {
+          "year": "2023",
+          "title": "PhD in Movement Science",
+          "org": "Ain Shams University",
+          "location": "Cairo, Egypt",
+          "note": "Research focus: integrating objective motion analysis into clinical decision-making."
+        }
+      }
+    },
+
+    "certifications": {
+      "items": {
+        "mckenzie": {
+          "code": "MDT",
+          "year": "2018",
+          "title": "McKenzie Method (Mechanical Diagnosis & Therapy)",
+          "issuer": "The McKenzie Institute International"
+        },
+        "maitland": {
+          "code": "MTP",
+          "year": "2019",
+          "title": "Maitland Manual Therapy — Level 3",
+          "issuer": "Maitland Australian Physiotherapy Seminars"
+        },
+        "dryNeedling": {
+          "code": "DN",
+          "year": "2020",
+          "title": "Dry Needling Certification",
+          "issuer": "Dry Needling Institute"
+        },
+        "sportsRehab": {
+          "code": "SRP",
+          "year": "2021",
+          "title": "Sports Rehabilitation Specialist",
+          "issuer": "FIFA Medical Assessment & Rehabilitation"
+        },
+        "manualTherapy": {
+          "code": "COMT",
+          "year": "2022",
+          "title": "Certified Orthopedic Manual Therapist",
+          "issuer": "Orthopedic Manual Therapy Association"
+        },
+        "painScience": {
+          "code": "TPS",
+          "year": "2023",
+          "title": "Therapeutic Pain Specialist",
+          "issuer": "Pain Science Institute"
+        }
+      }
+    },
+
+    "experience": {
+      "items": {
+        "clinic1": {
+          "year": "2015 — 2018",
+          "title": "Staff Physiotherapist",
+          "org": "Cairo Orthopedic Center",
+          "location": "Cairo, Egypt",
+          "note": "Managed a caseload of 30+ patients per week, focusing on post-surgical rehabilitation."
+        },
+        "hospital": {
+          "year": "2018 — 2021",
+          "title": "Senior Rehabilitation Specialist",
+          "org": "Al-Salam International Hospital",
+          "location": "Cairo, Egypt",
+          "note": "Led the outpatient musculoskeletal team. Designed hospital-wide post-op recovery protocols."
+        },
+        "sports": {
+          "year": "2021 — Present",
+          "title": "Sports Rehabilitation Consultant",
+          "org": "Egyptian Olympic Committee",
+          "location": "Cairo, Egypt",
+          "note": "Working with national teams on injury prevention and return-to-play decision-making."
+        },
+        "academic": {
+          "year": "2022 — Present",
+          "title": "Clinical Instructor",
+          "org": "Cairo University — Faculty of Physical Therapy",
+          "location": "Cairo, Egypt",
+          "note": "Teaching advanced manual therapy and clinical reasoning to postgraduate students."
+        }
+      }
+    }
+  },
+  "clinical": {
+    "eyebrow": "Clinical Space",
+    "title": "A sanctuary engineered for focus and healing",
+    "description": "We recognize that clinical anxiety restricts autonomic healing. Our private practice spaces are designed as serene sanctuaries — free of hospital noise and crowded waiting halls — prioritizing peace, privacy, and dedicated physician focus.",
+    "imageAlt": "The clinic's calm, private treatment room",
+    "imageCaption": {
+      "title": "Private practice",
+      "subtitle": "New Cairo & Maadi"
+    },
+    "features": {
+      "schedule": {
+        "title": "Appointment-only schedule",
+        "description": "Strict 1-on-1 scheduling with zero waiting time."
+      },
+      "equipment": {
+        "title": "Objective assessment tools",
+        "description": "Advanced motion capture and dynamometric testing."
+      },
+      "quiet": {
+        "title": "Quiet, private rooms",
+        "description": "No hospital noise, no crowded waiting areas."
+      }
+    },
+    "locationsLabel": "Practice locations",
+    "locations": {
+      "newCairo": "New Cairo",
+      "maadi": "Maadi"
+    }
+  }
+}

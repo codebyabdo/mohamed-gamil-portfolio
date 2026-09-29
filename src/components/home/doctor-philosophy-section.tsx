@@ -9,6 +9,7 @@ import { Section } from "@/components/ui/section";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
+import { ImageWithCaption } from "../shared/image-with-caption";
 
 export async function DoctorPhilosophySection() {
   const t = await getTranslations("home.philosophy");
@@ -42,35 +43,15 @@ export async function DoctorPhilosophySection() {
               direction={locale === "ar" ? "right" : "left"}
               className="relative min-h-105 overflow-hidden lg:col-span-5 lg:min-h-160"
             >
-              <Image
+              <ImageWithCaption
                 src="/image.png"
                 alt={t("imageAlt")}
+                title={t("caption.name")}
+                subtitle={t("caption.role")}
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                fill
-                className="object-cover object-top"
+                className="h-full min-h-105 lg:min-h-160"
+                imageClassName="object-top"
               />
-
-              <div
-                aria-hidden="true"
-                className="absolute inset-0 bg-linear-to-t from-primary/45 via-transparent to-transparent"
-              />
-
-              <div className="absolute inset-x-4 bottom-4 sm:inset-x-6 sm:bottom-6">
-                <div className="inline-flex max-w-full flex-col rounded-lg border border-border/70 bg-background/90 px-4 py-3 shadow-sm backdrop-blur-sm">
-                  <div className="flex items-center gap-2">
-                    <span
-                      aria-hidden="true"
-                      className="size-2 shrink-0 rounded-full bg-sage"
-                    />
-                    <span className="font-heading text-sm font-semibold text-primary">
-                      {t("caption.name")}
-                    </span>
-                  </div>
-                  <span className="mt-1 text-xs text-muted-foreground">
-                    {t("caption.role")}
-                  </span>
-                </div>
-              </div>
             </Reveal>
 
             {/* Content */}
@@ -88,7 +69,9 @@ export async function DoctorPhilosophySection() {
 
                 {/* Heading */}
                 <Reveal direction="up" delay={0.05}>
-                  <h2 className="text-h2 max-w-3xl text-primary">{t("title")}</h2>
+                  <h2 className="text-h2 max-w-3xl text-primary">
+                    {t("title")}
+                  </h2>
                 </Reveal>
 
                 {/* Description */}
@@ -132,9 +115,7 @@ export async function DoctorPhilosophySection() {
                   </Link>
 
                   {/* Fixed: Button asChild */}
-                  <Button
-                    className="rounded-full bg-primary px-5 font-heading text-sm font-semibold text-primary-foreground shadow-none transition-colors duration-300 hover:bg-primary/90"
-                  >
+                  <Button className="rounded-full bg-primary px-5 font-heading text-sm font-semibold text-primary-foreground shadow-none transition-colors duration-300 hover:bg-primary/90">
                     <Link href="/contact">{t("cta")}</Link>
                   </Button>
                 </div>

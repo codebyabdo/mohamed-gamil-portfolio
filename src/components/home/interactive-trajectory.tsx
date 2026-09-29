@@ -15,6 +15,7 @@ import { Container } from "@/components/ui/container";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { SectionHeadingReveal } from "@/components/shared/section-heading-reveal";
 import { TrajectoryLine } from "@/components/shared/trajectory-line";
+import { TrajectoryDivider } from "../shared/trajectory-divider";
 
 export function InteractiveTrajectory() {
   const t = useTranslations("trajectory");
@@ -44,29 +45,9 @@ export function InteractiveTrajectory() {
 
         {/* Trajectory Connector Visual */}
         <div className="relative mb-8">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-x-12 top-7 z-0 hidden h-10 lg:block"
-          >
-            <svg
-              viewBox="0 0 1000 40"
-              fill="none"
-              preserveAspectRatio="none"
-              className="h-full w-full"
-            >
-              <m.path
-                d="M 50 20 C 300 8, 700 32, 950 18"
-                stroke="var(--color-primary)"
-                strokeOpacity="0.18"
-                strokeWidth="1.75"
-                strokeDasharray="4 4"
-                initial={{ pathLength: 0 }}
-                whileInView={{ pathLength: 1 }}
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-              />
-            </svg>
-          </div>
+          <TrajectoryDivider
+            className="pointer-events-none absolute inset-x-12 top-0  hidden h-10 lg:block"
+          />
 
           {/* Step Selector — staggered + hover */}
           <Stagger
@@ -97,7 +78,7 @@ export function InteractiveTrajectory() {
                       "focus-visible:ring-offset-2",
                       isSelected
                         ? "border-sage bg-surface shadow-sm"
-                        : "border-border bg-background hover:border-border-strong hover:bg-surface/60",
+                        : "border-border bg-background hover:border-border-strong",
                     ].join(" ")}
                   >
                     <div className="mb-2 flex items-center justify-between gap-3">

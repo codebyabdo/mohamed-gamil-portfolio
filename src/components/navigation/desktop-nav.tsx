@@ -22,9 +22,7 @@ function isNavigationItemActive(pathname: string, href: string) {
 
   if (targetPath === "/") return currentPath === "/";
 
-  return (
-    currentPath === targetPath || currentPath.startsWith(`${targetPath}/`)
-  );
+  return currentPath === targetPath || currentPath.startsWith(`${targetPath}/`);
 }
 
 export function DesktopNav() {
@@ -53,10 +51,11 @@ export function DesktopNav() {
       items={items}
       activeIndex={activeIndex}
       particleCount={8}
-      particleDistances={[10, 60]}
-      particleR={15}
-      animationTime={400}
-      timeVariance={150}
+      particleDistances={[70, 10]}
+      particleR={160}
+      initialActiveIndex={100}
+      animationTime={600}
+      timeVariance={300}
       colors={[1, 2, 3, 4]}
       renderLink={({ href, children, onClick, className, ...rest }) => (
         <Link href={href} onClick={onClick} className={className} {...rest}>

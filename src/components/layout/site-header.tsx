@@ -27,7 +27,6 @@ export async function SiteHeader() {
 
             <LanguageSwitcher />
 
-            {/* Button asChild — no <a> inside <button> */}
             <Button className="shrink-0 rounded-full bg-primary px-5 py-6 font-heading text-sm font-semibold text-primary-foreground shadow-none transition-colors duration-300 hover:bg-primary/90">
               <Link href="/contact">{t("bookSession")}</Link>
             </Button>
