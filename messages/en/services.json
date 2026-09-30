@@ -1,4 +1,12 @@
 {
+  "hero": {
+    "eyebrow": "Areas of Expertise",
+    "title": "Specialized care for better movement.",
+    "description": "I help patients navigate injuries, pain, and movement challenges through an approach centered around understanding each condition and each person's needs.",
+    "cta": "Book a session"
+  },
+  "eyebrow": "What every session includes",
+  "description": "Each session is designed to give you a clear assessment, effective treatment, and a structured plan to keep progressing.",
   "showcase": {
     "eyebrow": "Areas of Care",
     "title": "Care built around how you move.",
@@ -40,6 +48,231 @@
       "description": "Focused rehabilitation to restore movement and performance and support a gradual return to sport.",
       "keyFocus": "Return-to-sport physical readiness tests, sport-specific conditioning, re-injury prevention.",
       "imageAlt": "Sports rehabilitation and performance training"
+    }
+  },
+  "detail": {
+    "backToServices": "Back to all services",
+    "bookCta": "Book a session",
+    "askCta": "Ask a question",
+    "includedTitle": "What every session includes",
+    "included": {
+      "assessment": {
+        "title": "Detailed assessment",
+        "description": "A full movement and functional evaluation before any treatment begins."
+      },
+      "treatment": {
+        "title": "Hands-on treatment",
+        "description": "Manual therapy, movement re-education, and progressive loading tailored to you."
+      },
+      "followUp": {
+        "title": "Structured follow-up",
+        "description": "A clear home program and progress checkpoints to keep your recovery on track."
+      }
+    }
+  },
+  "overview": {
+    "sports-injuries": {
+      "eyebrow": "Overview",
+      "title": "Movement-based recovery for athletes and active people",
+      "p1": "Sports injuries rarely affect just one joint or muscle — they change how you move, load, and trust your body. My approach starts by understanding the mechanics behind your injury, not just the symptoms.",
+      "p2": "From there, we build a progressive plan that restores tissue capacity, re-educates movement patterns, and prepares you for a safe return to your sport.",
+      "highlights": {
+        "assessment": {
+          "title": "Detailed movement analysis",
+          "description": "We look at how you move, not just where it hurts."
+        },
+        "approach": {
+          "title": "Progressive loading",
+          "description": "Tissues adapt to load — we build capacity gradually."
+        },
+        "progress": {
+          "title": "Return-to-sport readiness",
+          "description": "Objective tests before we clear you back to training."
+        }
+      }
+    },
+    "back-pain": {
+      "eyebrow": "Overview",
+      "title": "Understanding back pain — not just treating the symptom",
+      "p1": "Most back pain isn't caused by a single event. It emerges from how we sit, stand, move, and carry load over time. Effective treatment begins by identifying those patterns.",
+      "p2": "Together, we work on restoring movement confidence, reducing protective tension, and rebuilding the capacity of your spine and surrounding muscles.",
+      "highlights": {
+        "assessment": {
+          "title": "Postural & movement analysis",
+          "description": "How your spine moves through daily activities."
+        },
+        "approach": {
+          "title": "Pain regulation",
+          "description": "Manual therapy and graded exposure to reduce fear of movement."
+        },
+        "progress": {
+          "title": "Long-term resilience",
+          "description": "Building a spine that tolerates the demands of your life."
+        }
+      }
+    },
+    "joint-pain": {
+      "eyebrow": "Overview",
+      "title": "Restoring joint mobility with a function-first approach",
+      "p1": "Joint pain — whether in the knee, shoulder, or hip — often limits movement long before it limits strength. My focus is on restoring the range of motion that allows you to move freely.",
+      "p2": "We combine manual therapy, targeted strengthening, and gradual return to daily activities.",
+      "highlights": {
+        "assessment": {
+          "title": "Range-of-motion testing",
+          "description": "We quantify what your joint can and cannot do."
+        },
+        "approach": {
+          "title": "Manual therapy",
+          "description": "Hands-on techniques to restore joint mechanics."
+        },
+        "progress": {
+          "title": "Strength & support",
+          "description": "Reinforcing the muscles that protect the joint."
+        }
+      }
+    },
+    "rehabilitation": {
+      "eyebrow": "Overview",
+      "title": "A structured path back to movement confidence",
+      "p1": "Rehabilitation after injury or surgery is more than recovery — it's rebuilding your relationship with your body. We start with where you are, and move forward step by step.",
+      "p2": "From post-operative protocols to rebuilding strength after prolonged inactivity, every phase has clear goals and objective checkpoints.",
+      "highlights": {
+        "assessment": {
+          "title": "Baseline evaluation",
+          "description": "Where are you now, and what does your body need?"
+        },
+        "approach": {
+          "title": "Phase-based progression",
+          "description": "Each phase has a purpose — no skipping ahead."
+        },
+        "progress": {
+          "title": "Neuromuscular balance",
+          "description": "Retraining your body to move as one system again."
+        }
+      }
+    },
+    "sports-rehabilitation": {
+      "eyebrow": "Overview",
+      "title": "From injury back to performance",
+      "p1": "Returning to sport is not just about healing tissue. It's about restoring the strength, coordination, and confidence that sport demands.",
+      "p2": "We use sport-specific conditioning and objective readiness tests to make sure you return stronger — not just pain-free.",
+      "highlights": {
+        "assessment": {
+          "title": "Sport-specific testing",
+          "description": "What does your sport demand from your body?"
+        },
+        "approach": {
+          "title": "Progressive conditioning",
+          "description": "Rebuilding capacity specific to your sport."
+        },
+        "progress": {
+          "title": "Injury prevention",
+          "description": "Reducing the risk of re-injury through preparation."
+        }
+      }
+    }
+  },
+  "relatedCase": {
+    "eyebrow": "Real case",
+    "title": "See how this looked for one of my patients",
+    "description": "Every case is different — but patterns repeat. Here's a real example of how this service played out.",
+    "viewAll": "View all cases"
+  },
+  "faq": {
+    "eyebrow": "Common questions",
+    "title": "Answers before we begin",
+    "description": "The questions I hear most often from patients considering this service.",
+    "items": {
+      "sports-injuries": {
+        "q1": {
+          "question": "How many sessions will I need?",
+          "answer": "It depends on the injury and your goals. Most patients see meaningful progress within 4–6 sessions, with a full return to sport often taking 8–12 weeks. We'll set clear milestones from the first session."
+        },
+        "q2": {
+          "question": "Do I need a doctor's referral?",
+          "answer": "No referral is required to book a session. If imaging or specialist input is needed, I'll guide you on the next steps."
+        },
+        "q3": {
+          "question": "Can I keep training while recovering?",
+          "answer": "In most cases, yes — with modifications. We'll identify what you can safely continue and build the rest of the plan around it."
+        },
+        "q4": {
+          "question": "When can I return to competition?",
+          "answer": "Return to competition is based on objective readiness tests (strength, balance, sport-specific movement). We won't clear you until every criterion is met — even if pain is gone."
+        }
+      },
+      "back-pain": {
+        "q1": {
+          "question": "Is my back pain caused by a disc herniation?",
+          "answer": "In many cases, pain isn't driven by a single cause. Assessment will clarify whether there's a specific structural issue or whether pain is related to load and movement patterns we can change."
+        },
+        "q2": {
+          "question": "Is bed rest helpful?",
+          "answer": "Prolonged rest often makes back pain worse. Guided movement and progressive loading are the most powerful tools for restoring spine function."
+        },
+        "q3": {
+          "question": "Will I need imaging (X-ray or MRI)?",
+          "answer": "Usually not, unless warning signs appear during assessment. Most back pain cases are managed successfully without imaging."
+        },
+        "q4": {
+          "question": "Will I keep exercising after recovery?",
+          "answer": "Yes. The goal is for you to own a clear routine you can maintain long-term — without needing ongoing sessions."
+        }
+      },
+      "joint-pain": {
+        "q1": {
+          "question": "Should I stop moving to reduce pain?",
+          "answer": "No. Guided movement is the foundation of recovery. We'll modify activity rather than stop it, so you preserve range of motion and muscle strength."
+        },
+        "q2": {
+          "question": "Does joint pain mean irreversible wear?",
+          "answer": "Not necessarily. Many joint pain cases improve significantly with rehabilitation, even when imaging shows mild wear."
+        },
+        "q3": {
+          "question": "Will pain increase with exercise?",
+          "answer": "Mild temporary discomfort during loading is normal. We'll calibrate intensity so pain stays tolerable and doesn't worsen after the session."
+        },
+        "q4": {
+          "question": "How long until I see improvement?",
+          "answer": "Most patients notice better movement and less pain within 3–4 weeks. Full improvement depends on the joint and how consistently you follow the program."
+        }
+      },
+      "rehabilitation": {
+        "q1": {
+          "question": "When should rehab start after surgery?",
+          "answer": "Rehab usually starts within days of surgery — even gently. The earlier it begins with proper supervision, the better the outcome."
+        },
+        "q2": {
+          "question": "Will I return to my previous level?",
+          "answer": "The goal is always to return at or above your previous level. The result depends on the surgery, your consistency, and the quality of the rehab program."
+        },
+        "q3": {
+          "question": "How long does rehabilitation take?",
+          "answer": "It varies. Some patients return to daily activities within 4–6 weeks, while a full return to sport can take 3 to 6 months."
+        },
+        "q4": {
+          "question": "Do I need multiple sessions per week?",
+          "answer": "Early stages may require two sessions per week. After that, we reduce frequency and rely more on your home program."
+        }
+      },
+      "sports-rehabilitation": {
+        "q1": {
+          "question": "What's the difference between sports rehab and general rehab?",
+          "answer": "Sports rehab is designed to prepare you for the specific demands of your sport — with strength, coordination, and readiness testing. General rehab focuses on daily activities."
+        },
+        "q2": {
+          "question": "Will I train using movements from my sport?",
+          "answer": "Yes, at the right stage. We start with general work, then progress to sport-specific movements under load before full return."
+        },
+        "q3": {
+          "question": "How do you know I'm ready to return?",
+          "answer": "We use objective tests: muscle strength, jump capacity, balance, and sport-specific movement. Return only happens when every criterion is passed."
+        },
+        "q4": {
+          "question": "How do I prevent re-injury?",
+          "answer": "By building lasting strength and balance, and continuing a preventive routine after return. I'll give you a short program you can stick with long-term."
+        }
+      }
     }
   }
 }

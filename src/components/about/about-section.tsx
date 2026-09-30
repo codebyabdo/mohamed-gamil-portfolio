@@ -1,5 +1,5 @@
 import { TrajectoryDivider } from "@/components/shared/trajectory-divider";
-import { HeroAbout } from "./hero-about";
+import { AboutHero } from "./about-hero";
 import { ProfessionalIdentity } from "./professional-identity";
 import { PersonalPhilosophy } from "./personal-philosophy";
 import { TrajectoryLine } from "@/components/shared/trajectory-line";
@@ -13,7 +13,7 @@ export async function AboutSection() {
   return (
     <div>
       {/* 1. HERO */}
-      <HeroAbout />
+      <AboutHero />
 
       {/* Trajectory transition */}
       <Reveal aria-hidden="true">

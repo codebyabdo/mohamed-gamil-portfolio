@@ -9,7 +9,7 @@ import { Reveal } from "@/components/motion";
 import { ImageWithCaption } from "@/components/shared/image-with-caption";
 import { EyebrowTag } from "../shared/eyebrow-badge";
 
-export async function HeroAbout() {
+export async function AboutHero() {
   const t = await getTranslations("about.hero");
   const locale = await getLocale();
 
@@ -32,6 +32,7 @@ export async function HeroAbout() {
                 className="min-h-105 lg:min-h-160"
                 overlay="strong"
                 position="bottom-start"
+                priority
               />
             </Reveal>
 

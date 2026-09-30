@@ -26,7 +26,7 @@ export function ServicesShowcase() {
 
   const activeService = useMemo(
     () =>
-      previewServices.find((service) => service.id === selectedId) ??
+      previewServices.find((service) => service.slug === selectedId) ??
       previewServices[0],
     [previewServices, selectedId],
   );
@@ -77,7 +77,7 @@ export function ServicesShowcase() {
 
         {/* Services Showcase */}
         <div className="grid items-stretch gap-6 lg:grid-cols-12 lg:gap-8">
-          {/* Service Navigation — staggered */}
+          {/* Service Navigation */}
           <Stagger className="flex flex-col gap-2 lg:col-span-5" amount={0.1}>
             {previewServices.map((service) => {
               const isSelected = service.id === activeService.id;
@@ -155,7 +155,7 @@ export function ServicesShowcase() {
             })}
           </Stagger>
 
-          {/* Active Service — animated swap */}
+          {/* Active Service */}
           <Reveal direction="up" delay={0.15} className="lg:col-span-7">
             <AnimatePresence mode="wait">
               <m.article
@@ -238,8 +238,10 @@ export function ServicesShowcase() {
                     <span className="text-body-sm text-muted-foreground">
                       {t("showcase.footer")}
                     </span>
+
+                    {/* ← Updated: use slug instead of #anchor */}
                     <Link
-                      href={`/services#${activeService.id}`}
+                      href={`/services/${activeService.slug}`}
                       className={cn(
                         "group inline-flex items-center gap-2",
                         "font-heading text-sm font-semibold text-primary",
@@ -263,9 +265,11 @@ export function ServicesShowcase() {
           </Reveal>
         </div>
       </Container>
-      <Reveal aria-hidden="true">
+
+      {/* ← Fixed: no aria-hidden on Reveal */}
+      <div aria-hidden="true" className="mt-12">
         <TrajectoryLine variant="wave-divider" color="var(--color-primary)" />
-      </Reveal>
+      </div>
     </Section>
   );
 }
