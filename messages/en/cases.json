@@ -2,18 +2,19 @@
   "showcase": {
     "eyebrow": "Clinical Evidence",
     "title": "Real cases. Different journeys. Meaningful progress.",
-    "description": "Explore selected cases and learn about the challenges patients faced and how their rehabilitation journey was approached with measurable outcomes.",
+    "description": "Explore selected cases...",
     "exploreAll": "Explore Cases",
     "viewCase": "View Case",
-    "clinicalCases": "Clinical Cases"
+    "clinicalCases": "Clinical Cases",
+    "cta": "Book a session"
   },
+
   "items": {
     "rotator-cuff-functional-rehab": {
       "title": "Rotator Cuff Rehabilitation & Restoring Natural Range",
       "category": "Shoulder & Joint Rehabilitation",
       "summary": "Rebuilding functional stability in the shoulder joint following 6 months of restricted elevation and pain.",
       "imageAlt": "Shoulder rehabilitation and physiotherapy treatment",
-      "duration": "10 Weeks",
       "caseProblem": "A 38-year-old patient experiencing chronic rotator cuff tendinopathy with sharp impingement pain during overhead lifting activities.",
       "challenge": "Pain significantly disrupted sleep quality, daily dressing routines, and sports activities due to apprehension of further tissue damage.",
       "approach": "Initial phase focused on load management and desensitization, followed by progressive scapular stabilization and rotator cuff strengthening.",
@@ -42,6 +43,87 @@
         "quote": "I thought surgery was inevitable. Dr. Mohamed explained the biomechanics clearly and made me feel like an active partner in my recovery.",
         "author": "Tarek M. (38 yrs)"
       }
+    },
+
+    "shoulder-impingement-overhead": {
+      "title": "Shoulder Impingement Treatment & Overhead Mobility",
+      "category": "Shoulder & Joint Rehabilitation",
+      "summary": "Restoring smooth overhead reach after chronic shoulder pain.",
+      "imageAlt": "Shoulder impingement physiotherapy"
+    },
+
+    "lumbar-spine-desk-worker": {
+      "title": "Lower Back Rehabilitation for a Desk Worker",
+      "category": "Spine & Back",
+      "summary": "Addressing chronic lower back pain caused by prolonged sitting and desk work.",
+      "imageAlt": "Lower back rehabilitation"
+    },
+
+    "cervical-postural-recovery": {
+      "title": "Cervical Postural Recovery",
+      "category": "Spine & Back",
+      "summary": "Treating neck pain related to prolonged poor posture.",
+      "imageAlt": "Neck and postural rehabilitation"
+    },
+
+    "post-acl-athletic-progression": {
+      "title": "Return to Sport After ACL Reconstruction",
+      "category": "Sports Rehabilitation",
+      "summary": "A progressive return-to-sport program after ACL surgery.",
+      "imageAlt": "ACL rehabilitation and return to sport"
+    },
+
+    "runner-overuse-recovery": {
+      "title": "Runner's Overuse Injury Recovery",
+      "category": "Sports Rehabilitation",
+      "summary": "Treating an overuse injury while maintaining running fitness.",
+      "imageAlt": "Overuse injury rehabilitation"
+    },
+
+    "post-op-knee-rehab": {
+      "title": "Post-Operative Knee Rehabilitation",
+      "category": "Rehabilitation",
+      "summary": "A comprehensive rehab program after knee surgery with full restoration of movement.",
+      "imageAlt": "Post-op knee rehabilitation"
+    },
+
+    "hip-replacement-recovery": {
+      "title": "Hip Replacement Recovery",
+      "category": "Rehabilitation",
+      "summary": "A structured recovery journey after hip replacement surgery.",
+      "imageAlt": "Hip replacement recovery"
     }
+  },
+
+  "detail": {
+    "backToCases": "Back to all cases",
+    "overviewTitle": "Case overview",
+    "challengeTitle": "The challenge",
+    "approachTitle": "Clinical approach",
+    "journeyTitle": "Rehabilitation journey",
+    "progressTitle": "Progress & outcome",
+    "milestoneLabel": "Key milestone",
+    "patientExperienceTitle": "Patient experience"
+  },
+
+  "related": {
+    "eyebrow": "Related cases",
+    "title": "Other cases with a similar approach",
+    "description": "Every case is unique — but the principles repeat. Here are related examples."
+  },
+
+  "filter": {
+    "ariaLabel": "Filter cases by category",
+    "all": "All Cases",
+    "shoulder": "Shoulder & Joints",
+    "spine": "Spine & Back",
+    "sports": "Sports Rehab",
+    "rehabilitation": "Rehabilitation"
+  },
+
+  "empty": {
+    "title": "No cases found",
+    "description": "Try adjusting your filter or exploring a different category.",
+    "clearFilter": "Clear filter"
   }
 }

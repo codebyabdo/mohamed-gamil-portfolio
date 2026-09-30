@@ -15,29 +15,18 @@ import {
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
-import { cn } from "@/lib/utils";
+import { FilterChips, type FilterOption } from "@/components/shared/filter-chips";
 import { SectionHeading } from "../shared/Section-heading";
-import { Button } from "../ui/button";
+import { cn } from "@/lib/utils";
 
 /* ═════════════════════════════════════════════════
    Types
    ═════════════════════════════════════════════════ */
 type TabKey = "education" | "certifications" | "experience";
 
-interface TabConfig {
-  key: TabKey;
-  Icon: React.ComponentType<{ className?: string }>;
-}
-
 /* ═════════════════════════════════════════════════
    Module-scope data
    ═════════════════════════════════════════════════ */
-const TABS: TabConfig[] = [
-  { key: "education", Icon: GraduationCap },
-  { key: "certifications", Icon: Award },
-  { key: "experience", Icon: Briefcase },
-];
-
 const EDUCATION_ITEMS = ["bachelor", "master", "phd"] as const;
 const CERT_ITEMS = [
   "mckenzie",
@@ -50,9 +39,8 @@ const CERT_ITEMS = [
 const EXPERIENCE_ITEMS = ["clinic1", "hospital", "sports", "academic"] as const;
 
 /* ═════════════════════════════════════════════════
-   Sub-components (module scope — React Compiler safe)
+   TimelineItem (module scope)
    ═════════════════════════════════════════════════ */
-
 interface TimelineItemProps {
   year: string;
   title: string;
@@ -74,13 +62,11 @@ function TimelineItem({
 }: TimelineItemProps) {
   return (
     <div className="group relative flex gap-5 sm:gap-6">
-      {/* Timeline line + node */}
       <div className="relative flex shrink-0 flex-col items-center">
         <span
           className="
             grid size-10 place-items-center rounded-full
-            border border-border bg-surface
-            text-sage
+            border border-border bg-surface text-sage
             transition-colors duration-300
             group-hover:border-sage/50 group-hover:bg-sage/5
           "
@@ -96,7 +82,6 @@ function TimelineItem({
         )}
       </div>
 
-      {/* Content */}
       <div className={cn("flex-1 pb-8", isLast && "pb-0")}>
         <span className="mb-1.5 inline-flex items-center gap-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-clay">
           <Calendar className="size-3" />
@@ -133,6 +118,9 @@ function TimelineItem({
   );
 }
 
+/* ═════════════════════════════════════════════════
+   CertCard (module scope)
+   ═════════════════════════════════════════════════ */
 interface CertCardProps {
   code: string;
   title: string;
@@ -144,9 +132,8 @@ function CertCard({ code, title, issuer, year }: CertCardProps) {
   return (
     <article
       className="
-        group h-full
-        rounded-2xl border border-border bg-surface p-5
-        transition-all duration-300
+        group h-full rounded-2xl border border-border bg-surface p-5
+        transition-[border-color,box-shadow,transform] duration-300
         hover:-translate-y-0.5
         hover:border-sage/40
         hover:shadow-[0_16px_40px_-20px_rgb(24_59_58/0.15)]
@@ -182,6 +169,27 @@ export function Credentials() {
   const t = useTranslations("about.credentials");
   const [activeTab, setActiveTab] = useState<TabKey>("education");
 
+  /* ─────────────────────────────────────────────
+     Filter chips options (with icons)
+     ───────────────────────────────────────────── */
+  const tabOptions: FilterOption[] = [
+    {
+      value: "education",
+      label: t("tabs.education"),
+      icon: <GraduationCap />,
+    },
+    {
+      value: "certifications",
+      label: t("tabs.certifications"),
+      icon: <Award />,
+    },
+    {
+      value: "experience",
+      label: t("tabs.experience"),
+      icon: <Briefcase />,
+    },
+  ];
+
   return (
     <Section spacing="sm">
       <Container>
@@ -195,67 +203,16 @@ export function Credentials() {
           />
         </Reveal>
 
-        {/* ── Tabs ────────────────────────────────── */}
+        {/* ── Tabs (FilterChips) ──────────────────── */}
         <Reveal direction="up" delay={0.1}>
-          <div
-            role="tablist"
+          <FilterChips
+            options={tabOptions}
+            value={activeTab}
+            onChange={(value) => setActiveTab(value as TabKey)}
+            layoutId="credentials-tabs"
             aria-label={t("tabsAriaLabel")}
-            className="
-      relative mb-10 inline-flex items-center gap-1
-      rounded-full border border-border
-      bg-surface p-1
-      shadow-[0_1px_2px_rgb(24_59_58/0.04)]
-    "
-          >
-            {TABS.map(({ key, Icon }) => {
-              const isActive = activeTab === key;
-              return (
-                <button
-                  key={key}
-                  role="tab"
-                  type="button"
-                  aria-selected={isActive}
-                  aria-controls={`panel-${key}`}
-                  id={`tab-${key}`}
-                  onClick={() => setActiveTab(key)}
-                  className={cn(
-                    "relative inline-flex items-center gap-2 rounded-full px-4 py-2",
-                    "text-[12.5px] font-medium tracking-[0.01em]",
-                    "transition-colors duration-300",
-                    "focus-visible:outline-none",
-                    "focus-visible:ring-2 focus-visible:ring-sage/50",
-                    "focus-visible:ring-offset-2 focus-visible:ring-offset-background",
-                    isActive
-                      ? "text-primary"
-                      : "text-muted-foreground hover:text-primary",
-                  )}
-                >
-                  {/* Active pill background — animates between tabs */}
-                  {isActive && (
-                    <m.span
-                      layoutId="credentials-tab-pill"
-                      className="absolute inset-0 -z-10 rounded-full bg-primary"
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 32,
-                      }}
-                    />
-                  )}
-
-                  <Icon
-                    aria-hidden="true"
-                    className={cn(
-                      "size-3.5 transition-colors duration-300",
-                      isActive ? "text-primary" : "text-current",
-                    )}
-                  />
-
-                  <span>{t(`tabs.${key}`)}</span>
-                </button>
-              );
-            })}
-          </div>
+            className="mb-10"
+          />
         </Reveal>
 
         {/* ── Tab content ─────────────────────────── */}
@@ -283,7 +240,8 @@ export function Credentials() {
                   : EXPERIENCE_ITEMS
                 ).map((key, index, arr) => {
                   const isLast = index === arr.length - 1;
-                  const Icon = activeTab === "education" ? BookOpen : Briefcase;
+                  const Icon =
+                    activeTab === "education" ? BookOpen : Briefcase;
 
                   return (
                     <TimelineItem

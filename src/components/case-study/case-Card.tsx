@@ -25,21 +25,23 @@ export function CaseCard({ caseStudy, id }: CaseCardProps) {
       id={id}
       className={cn(
         "group h-full overflow-hidden rounded-2xl border border-border bg-surface",
-        // CSS-only border/shadow transitions (cheap, GPU-friendly)
-        "transition-[border-color,box-shadow] duration-300 ease-out",
-        "hover:border-sage/60 hover:shadow-sm",
+        "transition-[border-color,box-shadow,transform] duration-300 ease-out",
+        "hover:-translate-y-0.5",
+        "hover:border-sage/60",
+        "hover:shadow-[0_16px_40px_-20px_rgb(24_59_58/0.15)]",
       )}
     >
       <Link
-        href={`/cases?id=${caseStudy.id}`}
+        href={`/cases/${caseStudy.slug}`}  
         className={cn(
           "flex h-full flex-col justify-between",
           "focus-visible:outline-none",
           "focus-visible:ring-2",
-          "focus-visible:ring-[var(--focus-ring-color)]",
+          "focus-visible:ring-sage/50",
           "focus-visible:ring-offset-2",
         )}
       >
+        {/* Image */}
         <div>
           <div className="relative aspect-[16/10] overflow-hidden bg-primary/10">
             <Image
@@ -63,6 +65,7 @@ export function CaseCard({ caseStudy, id }: CaseCardProps) {
             </div>
           </div>
 
+          {/* Content */}
           <div className="p-6">
             <h3 className="text-h4 text-primary transition-colors duration-300 group-hover:text-sage">
               {title}
@@ -74,6 +77,7 @@ export function CaseCard({ caseStudy, id }: CaseCardProps) {
           </div>
         </div>
 
+        {/* Footer */}
         <div className="flex items-center justify-between border-t border-border-subtle px-6 py-4 text-sm font-semibold text-primary">
           <span className="transition-colors duration-300 group-hover:text-sage">
             {t("showcase.viewCase")}
