@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { cn } from "cn";
+import { cn } from "@/lib/utils";
 
 export interface StaggeredMenuItem {
   label: string;

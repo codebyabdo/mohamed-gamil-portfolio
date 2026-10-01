@@ -1,46 +1,81 @@
 {
-  "testimonials": {
+  "hero": {
     "eyebrow": "Patient Voice & Social Proof",
     "title": "Real experiences. Meaningful progress.",
     "description": "Every recovery journey is different. These experiences reflect the value of understanding the person, building trust, and progressing with a clear clinical direction.",
-    "readAll": "Read All Patient Experiences",
-    "watchTestimonial": "Watch Patient Testimonial",
-    "videoTestimonial": "Video Testimonial",
-    "writtenTestimonial": "Patient Testimonial",
-    "caseTestimonial": "Case Experience",
-    "sarah": {
-      "name": "Sarah M.",
-      "context": "Marathon Runner",
-      "quote": "The first time a physiotherapist listened to every single habit in my day and running routine before touching my knee. Understanding was what made all the difference."
-    },
-    "tarek": {
-      "name": "Tarek M.",
+    "readAll": "Read All Patient Experiences"
+  },
+
+  "types": {
+    "written": "Patient Testimonial",
+    "video": "Video Testimonial",
+    "caseLinked": "Case Experience"
+  },
+
+  "video": {
+    "play": "Watch Patient Testimonial",
+    "consentNote": "Patient video shared with written ethical consent.",
+    "close": "Close"
+  },
+
+  "caseReference": "Case reference",
+  "viewCase": "View case",
+
+  "filter": {
+    "ariaLabel": "Filter testimonials by type",
+    "all": "All Stories",
+    "written": "Written",
+    "video": "Video Stories",
+    "caseLinked": "Case-Linked"
+  },
+
+  "empty": {
+    "title": "No testimonials",
+    "description": "Try adjusting the filter.",
+    "clearFilter": "Clear filter"
+  },
+
+  "ethics": {
+    "note": "Clinical note: All shared patient feedback and video excerpts are published with explicit informed consent in compliance with medical confidentiality standards."
+  },
+
+  "items": {
+    "tarekRotatorCuff": {
+      "quote": "I thought surgery was inevitable. Dr. Mohamed explained the biomechanics and made me an active partner until I completely regained my arm mobility.",
+      "author": "Tarek M.",
       "context": "Rotator Cuff Case",
-      "quote": "I thought surgery was inevitable. Dr. Mohamed explained the biomechanics and made me an active partner until I completely regained my arm mobility."
+      "caseTitle": "Rotator Cuff Rehabilitation"
     },
-    "mahmoud": {
-      "name": "Mahmoud H.",
-      "context": "Architect",
-      "quote": "My recovery journey from a lumbar disc issue without perpetual painkillers — how Dr. Mohamed taught me to manage my daily movement."
+
+    "sarahAcl": {
+      "quote": "The first time a physiotherapist listened to every single habit in my day and running routine before touching my knee. Understanding was what made all the difference.",
+      "author": "Sarah M.",
+      "context": "Marathon Runner"
     },
-    "karim": {
-      "name": "Karim A.",
+
+    "karimAcl": {
+      "quote": "Dr. Mohamed restored my trust in every jump and stride on the pitch through rigorous objective testing.",
+      "author": "Karim A.",
       "context": "ACL Reconstruction Case",
-      "quote": "Dr. Mohamed restored my trust in every jump and stride on the pitch through rigorous objective testing."
+      "caseTitle": "Post-ACL Athletic Progression"
     },
-    "nadia": {
-      "name": "Dr. Nadia F.",
-      "context": "University Professor",
-      "quote": "The serenity of the space and singular focus during sessions is rare. Dr. Mohamed practices with the highest clinical and ethical rigor."
+
+    "mahmoudLumbar": {
+      "quote": "My recovery journey from a lumbar disc issue without perpetual painkillers — how Dr. Mohamed taught me to manage my daily movement.",
+      "author": "Mahmoud H.",
+      "context": "Architect"
     },
-    "omar": {
-      "name": "Omar Sh.",
-      "context": "Calisthenics Athlete",
-      "quote": "Overuse wrist and elbow rehabilitation — progressing from complete rest back to peak athletic output."
+
+    "nadiaClinical": {
+      "quote": "The serenity of the space and singular focus during sessions is rare. Dr. Mohamed practices with the highest clinical and ethical rigor.",
+      "author": "Dr. Nadia F.",
+      "context": "University Professor"
     },
-    "cases": {
-      "rotatorCuffRehabilitation": "Rotator Cuff Rehabilitation",
-      "postAclAthleticProgression": "Post-ACL Athletic Progression"
+
+    "omarCalisthenics": {
+      "quote": "Overuse wrist and elbow rehabilitation — progressing from complete rest back to peak athletic output.",
+      "author": "Omar Sh.",
+      "context": "Calisthenics Athlete"
     }
   }
 }

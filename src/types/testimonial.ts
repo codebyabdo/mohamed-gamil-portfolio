@@ -3,11 +3,11 @@ export type TestimonialType = "written" | "video" | "case-linked";
 export interface Testimonial {
   id: string;
   type: TestimonialType;
-  authorKey: string;
-  roleOrContextKey?: string;
-  quoteKey: string;
+  /** Whether this testimonial has a context (role/location) */
+  hasContext?: boolean;
+  /** Video only */
   videoThumbnail?: string;
   videoDuration?: string;
-  caseId?: string;
-  caseTitleKey?: string;
+  /** Case-linked only */
+  caseSlug?: string;
 }
