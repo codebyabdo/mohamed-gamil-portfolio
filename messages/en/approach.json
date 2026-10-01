@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "eyebrow": "Treatment Methodology",
+    "title": "Recovery begins with a clear first step.",
+    "description": "Physiotherapy is not a one-size-fits-all prescription. Every journey begins with understanding your condition, building an approach around your needs, and tracking progress over time."
+  },
+  "trajectory": {
+    "eyebrow": "The Four Stages",
+    "title": "A Structured Care Trajectory",
+    "description": "An analytical and progressive sequence taking you from apprehension toward full kinetic independence.",
+    "steps": {
+      "assessment": {
+        "title": "Assessment",
+        "description": "A full movement and functional evaluation before any treatment begins.",
+        "details": "We start by understanding your history, movement patterns, and the goals you're working toward."
+      },
+      "planning": {
+        "title": "Planning",
+        "description": "A personalized roadmap with clear milestones.",
+        "details": "We design a plan that addresses the root cause — not just symptoms — with clear phases."
+      },
+      "treatment": {
+        "title": "Treatment",
+        "description": "Hands-on care combined with progressive loading.",
+        "details": "Manual therapy, movement re-education, and guided exercise progression."
+      },
+      "followUp": {
+        "title": "Follow-up",
+        "description": "Home program and checkpoints to keep progress on track.",
+        "details": "We give you the tools to continue independently, with periodic check-ins to confirm lasting results."
+      }
+    }
+  },
+  "deepdive": {
+    "eyebrow": "Methodology in Detail",
+    "cards": {
+      "listen": {
+        "title": "Why Listen & Understand First?",
+        "description": "Pain is not an isolated signal; it is influenced by daily habits, stress, and movement fear. Understanding your daily context allows us to design rehabilitation around your actual lifestyle."
+      },
+      "testing": {
+        "title": "Objective Testing & Safe Progression",
+        "description": "We rely on measurable force output, range-of-motion angles, and limb symmetry to validate your progress before advancing difficulty."
+      }
+    }
+  },
+  "vision": {
+    "eyebrow": "The Core Vision",
+    "quote": "The goal is not only to feel better today, but to understand your body and rebuild confidence in movement.",
+    "author": "Dr. Mohamed Gamil",
+    "cta": "Book a Session"
+  }
+}

@@ -3,9 +3,9 @@ import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 
 import { routing } from "@/i18n/routing";
-import { AboutSection } from "@/components/about/about-section";
+import { ApproachSection } from "@/components/approach/approach-section";
 
-export default async function AboutPage({
+export default async function ApproachPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -17,5 +17,6 @@ export default async function AboutPage({
   }
 
   setRequestLocale(locale);
-  return <AboutSection />;
+
+  return <ApproachSection />;
 }
