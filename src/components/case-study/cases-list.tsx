@@ -11,8 +11,9 @@ import { EmptyState } from "@/components/shared/empty-state";
 import { Button } from "@/components/ui/button";
 
 import type { CaseStudy } from "@/types/case-study";
-import { Section } from "../ui/section";
-import { Container } from "../ui/container";
+import { Section } from "@/components/ui/section";
+import { Container } from "@/components/ui/container";
+import { CardMotionWrapper } from "./card-motion-wrapper";
 
 interface CasesListProps {
   cases: CaseStudy[];
@@ -61,7 +62,9 @@ export function CasesList({ cases }: CasesListProps) {
             <Stagger className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {filtered.map((caseStudy) => (
                 <StaggerItem key={caseStudy.id}>
-                  <CaseCard caseStudy={caseStudy} />
+                  <CardMotionWrapper>
+                    <CaseCard caseStudy={caseStudy} />
+                  </CardMotionWrapper>
                 </StaggerItem>
               ))}
             </Stagger>

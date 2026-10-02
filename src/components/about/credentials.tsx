@@ -16,7 +16,7 @@ import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { FilterChips, type FilterOption } from "@/components/shared/filter-chips";
-import { SectionHeading } from "../shared/Section-heading";
+import { SectionHeading } from "@/components/shared/Section-heading";
 import { cn } from "@/lib/utils";
 
 /* ═════════════════════════════════════════════════

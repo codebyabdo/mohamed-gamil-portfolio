@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/motion";
 import { TrajectoryLine } from "@/components/shared/trajectory-line";
-import { EyebrowTag } from "../shared/eyebrow-badge";
+import { EyebrowTag } from "@/components/shared/eyebrow-tag";
 
 export async function FinalCTA() {
   const t = await getTranslations("home.finalCta");

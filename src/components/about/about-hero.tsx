@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/motion";
 import { ImageWithCaption } from "@/components/shared/image-with-caption";
-import { EyebrowTag } from "../shared/eyebrow-badge";
+import { EyebrowTag } from "@/components/shared/eyebrow-tag";
 
 export async function AboutHero() {
   const t = await getTranslations("about.hero");

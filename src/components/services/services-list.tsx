@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { SERVICES } from "@/content/service-item";
-import { SectionHeading } from "../shared/Section-heading";
+import { SectionHeading } from "@/components/shared/Section-heading";
 import { ServiceCard } from "./service-card";
 
 export function ServicesList() {

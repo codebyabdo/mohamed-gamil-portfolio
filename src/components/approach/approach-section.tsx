@@ -4,7 +4,7 @@ import { ApproachHero } from "./approach-hero";
 import { ApproachTrajectory } from "./approach-trajectory";
 import { ApproachDeepdive } from "./approach-deepdive";
 import { ApproachVision } from "./approach-vision";
-import { TrajectoryLine } from "../shared/trajectory-line";
+import { TrajectoryLine } from "@/components/shared/trajectory-line";
 
 export async function ApproachSection() {
   return (

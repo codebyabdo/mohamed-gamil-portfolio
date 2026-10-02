@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { ImageWithCaption } from "@/components/shared/image-with-caption";
-import { SectionHeading } from "../shared/Section-heading";
+import { SectionHeading } from "@/components/shared/Section-heading";
 
 /* ═════════════════════════════════════════════════
    Module-scope data

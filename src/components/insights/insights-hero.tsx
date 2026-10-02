@@ -5,8 +5,8 @@ import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/motion";
 import { EyebrowTag } from "@/components/shared/eyebrow-tag";
 
-export async function ApproachHero() {
-  const t = await getTranslations("approach.hero");
+export async function InsightsHero() {
+  const t = await getTranslations("insights.hero");
 
   return (
     <Section spacing="md">

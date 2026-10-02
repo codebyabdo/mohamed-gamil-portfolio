@@ -3,7 +3,7 @@
 import { m } from "framer-motion";
 import type { ReactNode } from "react";
 
-interface CaseCardMotionWrapperProps {
+interface CardMotionWrapperProps {
   children: ReactNode;
 }
 
@@ -11,9 +11,9 @@ interface CaseCardMotionWrapperProps {
  * Wraps a CaseCard with a hover-lift motion effect.
  * Kept separate so CaseCard itself can stay a Server Component.
  */
-export function CaseCardMotionWrapper({
+export function CardMotionWrapper({
   children,
-}: CaseCardMotionWrapperProps) {
+}: CardMotionWrapperProps) {
   return (
     <m.div
       whileHover={{ y: -4 }}

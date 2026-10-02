@@ -15,8 +15,8 @@ import { Section } from "@/components/ui/section";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/shared/Section-heading";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
-import { SectionHeadingReveal } from "../shared/section-heading-reveal";
-import { TrajectoryLine } from "../shared/trajectory-line";
+import { SectionHeadingReveal } from "@/components/shared/section-heading-reveal";
+import { TrajectoryLine } from "@/components/shared/trajectory-line";
 
 export function ServicesShowcase() {
   const t = useTranslations("services");

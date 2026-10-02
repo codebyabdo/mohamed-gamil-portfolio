@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
-import { SectionHeading } from "../shared/Section-heading";
+import { SectionHeading } from "@/components/shared/Section-heading";
 
 /* ═════════════════════════════════════════════════
    Icons (module scope — React Compiler safe)

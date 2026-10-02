@@ -8,8 +8,8 @@ import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/motion";
 import { ImageWithCaption } from "@/components/shared/image-with-caption";
-import { SectionHeading } from "../shared/Section-heading";
-import { SectionHeadingReveal } from "../shared/section-heading-reveal";
+import { SectionHeading } from "@/components/shared/Section-heading";
+import { SectionHeadingReveal } from "@/components/shared/section-heading-reveal";
 
 import type { ServiceItem } from "@/types/service-item";
 

@@ -9,7 +9,7 @@ import { Link } from "@/components/ui/link";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/ui/section";
 import { transitions } from "@/lib/motion";
-import { EyebrowTag } from "../shared/eyebrow-badge";
+import { EyebrowTag } from "@/components/shared/eyebrow-tag";
 import { Activity } from "lucide-react";
 import { Reveal } from "../motion";
 

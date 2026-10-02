@@ -15,7 +15,7 @@ import { Container } from "@/components/ui/container";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { SectionHeadingReveal } from "@/components/shared/section-heading-reveal";
 import { TrajectoryLine } from "@/components/shared/trajectory-line";
-import { TrajectoryDivider } from "../shared/trajectory-divider";
+import { TrajectoryDivider } from "@/components/shared/trajectory-divider";
 
 export function InteractiveTrajectory() {
   const t = useTranslations("trajectory");

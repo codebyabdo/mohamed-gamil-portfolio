@@ -9,7 +9,7 @@ import { Section } from "@/components/ui/section";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
-import { ImageWithCaption } from "../shared/image-with-caption";
+import { ImageWithCaption } from "@/components/shared/image-with-caption";
 
 export async function DoctorPhilosophySection() {
   const t = await getTranslations("home.philosophy");

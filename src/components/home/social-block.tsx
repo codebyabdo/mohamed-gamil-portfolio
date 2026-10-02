@@ -9,9 +9,9 @@ import { PREVIEW_REELS, SOCIAL_MEDIA_CHANNELS } from "@/content/social";
 
 import type { SocialPlatform } from "@/types/social";
 
-import { TrajectoryLine } from "../shared/trajectory-line";
-import { Section } from "../ui/section";
-import { Container } from "../ui/container";
+import { TrajectoryLine } from "@/components/shared/trajectory-line";
+import { Section } from "@/components/ui/section";
+import { Container } from "@/components/ui/container";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 
 const PLATFORM_ICONS: Record<SocialPlatform, React.ReactNode> = {

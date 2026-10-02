@@ -2,10 +2,10 @@ import { getTranslations } from "next-intl/server";
 import { ClipboardCheck, HandHeart, Repeat } from "lucide-react";
 
 import { Stagger, StaggerItem } from "../motion";
-import { Container } from "../ui/container";
-import { Section } from "../ui/section";
-import { SectionHeading } from "../shared/Section-heading";
-import { SectionHeadingReveal } from "../shared/section-heading-reveal";
+import { Container } from "@/components/ui/container";
+import { Section } from "@/components/ui/section";
+import { SectionHeading } from "@/components/shared/Section-heading";
+import { SectionHeadingReveal } from "@/components/shared/section-heading-reveal";
 
 /* ═════════════════════════════════════════════════
    Included items — modulescope

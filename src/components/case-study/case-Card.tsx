@@ -43,7 +43,7 @@ export function CaseCard({ caseStudy, id }: CaseCardProps) {
       >
         {/* Image */}
         <div>
-          <div className="relative aspect-[16/10] overflow-hidden bg-primary/10">
+          <div className="relative aspect-16/10 overflow-hidden bg-primary/10">
             <Image
               src={caseStudy.image}
               alt={imageAlt}

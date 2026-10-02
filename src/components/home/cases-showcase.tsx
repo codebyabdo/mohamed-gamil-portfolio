@@ -11,9 +11,9 @@ import { SectionHeading } from "@/components/shared/Section-heading";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { CaseCard } from "@/components/case-study/case-Card";
-import { CaseCardMotionWrapper } from "@/components/case-study/case-card-motion-wrapper";
+import { CardMotionWrapper } from "@/components/case-study/card-motion-wrapper";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
-import { SectionHeadingReveal } from "../shared/section-heading-reveal";
+import { SectionHeadingReveal } from "@/components/shared/section-heading-reveal";
 
 export function CasesShowcase() {
   const t = useTranslations("cases");
@@ -51,9 +51,9 @@ export function CasesShowcase() {
         >
           {CASES.slice(0, 3).map((caseStudy) => (
             <StaggerItem key={caseStudy.id}>
-              <CaseCardMotionWrapper>
+              <CardMotionWrapper>
                 <CaseCard caseStudy={caseStudy} />
-              </CaseCardMotionWrapper>
+              </CardMotionWrapper>
             </StaggerItem>
           ))}
         </Stagger>

@@ -13,7 +13,7 @@ import {
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Counter, Reveal, Stagger, StaggerItem } from "@/components/motion";
-import { SectionHeading } from "../shared/Section-heading";
+import { SectionHeading } from "@/components/shared/Section-heading";
 
 /* ═════════════════════════════════════════════════
    Static data — icons & variant mapping

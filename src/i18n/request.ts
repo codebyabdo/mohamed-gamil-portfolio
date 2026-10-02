@@ -19,7 +19,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       home: (await import(`../../messages/${locale}/home.json`)).default,
       about: (await import(`../../messages/${locale}/about.json`)).default,
       approach: (await import(`../../messages/${locale}/approach.json`)).default,
-
+      insights: (await import(`../../messages/${locale}/insights.json`)).default,
       navigation: (await import(`../../messages/${locale}/navigation.json`))
         .default,
 

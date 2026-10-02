@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/container";
 import { SocialIconRow } from "./social-icon-row";
 import { navigationItems } from "../navigation/navigation-config";
 import { LanguageSwitcher } from "../navigation/language-switcher";
-import { BrandLockup } from "../shared/brand-lockup";
+import { BrandLockup } from "@/components/shared/brand-lockup";
 
 export async function SiteFooter() {
   const t = await getTranslations("footer");

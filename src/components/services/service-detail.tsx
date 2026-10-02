@@ -4,7 +4,7 @@ import { ServiceFAQ } from "./service-faq";
 import { FinalCTA } from "@/components/home/final-cta";
 
 import type { ServiceItem } from "@/types/service-item";
-import { TrajectoryLine } from "../shared/trajectory-line";
+import { TrajectoryLine } from "@/components/shared/trajectory-line";
 import { ServiceHero } from "./service-hero";
 
 interface ServiceDetailProps {

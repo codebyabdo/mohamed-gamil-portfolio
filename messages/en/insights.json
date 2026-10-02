@@ -1,0 +1,165 @@
+{
+  "hero": {
+    "eyebrow": "Movement Insights & Knowledge",
+    "title": "Understand your body better.",
+    "description": "Clear and practical content about movement, pain, injuries, and rehabilitation."
+  },
+
+  "filter": {
+    "ariaLabel": "Filter insights by type",
+    "all": "All Insights",
+    "articles": "Educational Articles",
+    "guides": "Short Guides",
+    "videos": "Videos",
+    "social": "Social Highlights"
+  },
+
+  "empty": {
+    "title": "No insights",
+    "description": "Try adjusting the filter.",
+    "clearFilter": "Clear filter"
+  },
+
+  "detail": {
+    "backToInsights": "Back to all insights"
+  },
+
+  "related": {
+    "eyebrow": "Related insights",
+    "title": "Read more"
+  },
+
+  "items": {
+    "why-pain-doesnt-mean-damage": {
+      "title": "Why Pain Does Not Always Mean Tissue Damage",
+      "categoryLabel": "Educational Articles",
+      "topic": "Pain & Movement",
+      "summary": "How the nervous system interprets protective signals, and why understanding pain biology is the first step toward relief.",
+      "readTimeOrDuration": "5 min read",
+      "cta": "Read Insight",
+      "content": {
+        "intro": "Pain is a sophisticated alarm system designed to protect us. But understanding how this system works may be the key to freeing yourself from fear of movement.",
+        "sections": [
+          {
+            "heading": "Pain is not a measure of damage",
+            "body": "Pain can be sharp with a minor injury, or mild with a serious one. Pain is a complex experience produced by the nervous system's interaction with context, expectations, and emotions. It is not an X-ray."
+          },
+          {
+            "heading": "When pain persists",
+            "body": "When pain lasts more than 3 months, the nervous system can become more sensitive even after tissues have healed. This is what we call \"chronic pain\" or \"central sensitization\" — a treatable state, not a life sentence."
+          },
+          {
+            "heading": "The role of movement in recalibration",
+            "body": "Through gradual movement and structured exposure, we recalibrate the nervous system. The body learns that movement is safe, and pain gradually decreases. The process takes patience, but it works."
+          }
+        ],
+        "quote": "Pain is not an enemy to avoid, but a signal to understand.",
+        "takeaway": "The takeaway: If you live with chronic pain, movement — not rest — is your path to recovery. Start gradually, with professional guidance."
+      }
+    },
+
+    "desk-workers-movement-guide": {
+      "title": "A Practical Movement Guide for Desk Workers",
+      "categoryLabel": "Short Guides",
+      "topic": "Movement Health",
+      "summary": "Two-minute micro-movement sequences to refresh spinal hydration and hip mobility throughout the workday.",
+      "readTimeOrDuration": "4 min read",
+      "cta": "Read Guide",
+      "content": {
+        "intro": "Sitting is not the enemy — stillness is. Your spine and hips are built for movement, and small, frequent changes throughout the day matter far more than one perfect posture.",
+        "sections": [
+          {
+            "heading": "The best posture is your next posture",
+            "body": "No chair can fix eight hours of stillness. Every 30–45 minutes, change position. Stand, walk, or shift. The goal is variety, not perfection."
+          },
+          {
+            "heading": "The 2-minute reset",
+            "body": "Stand up, walk for 30 seconds, then do 3 gentle movements: a tall reach overhead, a slow hip hinge, and a light twist to each side. That's it. It takes two minutes and resets tissue hydration."
+          },
+          {
+            "heading": "Breathing matters more than you think",
+            "body": "Shallow chest breathing increases tension in the neck and lower back. Practice 5 slow diaphragmatic breaths each reset — belly expands, chest stays calm. This alone reduces stiffness."
+          }
+        ],
+        "quote": "Movement snacks beat one long workout when it comes to spinal health.",
+        "takeaway": "The takeaway: Set a timer for 45 minutes. When it rings, stand, walk, breathe. Your back will thank you by Friday."
+      }
+    },
+
+    "load-management-muscle-strains": {
+      "title": "Load Management: Preventing Recurrent Muscle Strains",
+      "categoryLabel": "Video Insights",
+      "topic": "Sports Injuries",
+      "summary": "Visual breakdown of acute:chronic workload ratios and how to structure training stimulus safely.",
+      "readTimeOrDuration": "04:20 min",
+      "cta": "Watch",
+      "content": {
+        "intro": "Most muscle strains don't happen because of bad form. They happen because the tissue was asked to handle a sudden spike in load it wasn't prepared for. Load management is the missing link.",
+        "sections": [
+          {
+            "heading": "What is the acute:chronic workload ratio?",
+            "body": "Compare your last 7 days of training load (acute) to your last 28 days (chronic). A ratio above 1.5 — meaning this week was 50% harder than your recent average — dramatically increases injury risk."
+          },
+          {
+            "heading": "The ramp-up rule",
+            "body": "Never increase weekly training volume or intensity by more than 10–15%. This gives tendons, muscles, and the nervous system time to adapt. Skipping this step is the #1 cause of recurrence."
+          },
+          {
+            "heading": "Deload before you think you need to",
+            "body": "Every 4–6 weeks, cut volume by 30–40% for one week. Athletes hate this — until they see their performance jump the following week. Recovery is training."
+          }
+        ],
+        "quote": "You don't get injured in one session. You get injured over three weeks of ignoring the signals.",
+        "takeaway": "The takeaway: Track your weekly load. If this week is more than 1.3x your last month, back off. Consistency beats intensity every time."
+      }
+    },
+
+    "pain-relief-vs-complete-rehab": {
+      "title": "From the Clinic: Pain Relief vs. Complete Rehabilitation",
+      "categoryLabel": "Social Highlights",
+      "topic": "Rehabilitation",
+      "summary": "Selected post series explaining why premature cessation of rehab exercises often leads to chronic recurrences.",
+      "readTimeOrDuration": "Instagram Thread",
+      "cta": "Read More",
+      "content": {
+        "intro": "The day pain disappears feels like the finish line. It isn't. In fact, for most patients, it's the starting line of the phase that actually matters.",
+        "sections": [
+          {
+            "heading": "Pain relief is phase one",
+            "body": "When pain drops, the body has calmed the alarm. Tissues are healing. But they are not yet strong. Stopping here means returning to the same load that caused the injury — with weaker tissue."
+          },
+          {
+            "heading": "The capacity-building phase",
+            "body": "This is where we rebuild strength, endurance, and coordination. It takes 6–12 weeks of progressive loading. No pain, but real work. This is what prevents re-injury."
+          },
+          {
+            "heading": "Why most people stop too early",
+            "body": "Because it feels fine. The motivation to train drops when the symptom is gone. But the tissues still need 2–3x longer than the pain to fully recover. This mismatch is why so many injuries recur."
+          }
+        ],
+        "quote": "The absence of pain is the green light to begin real training — not the signal to stop.",
+        "takeaway": "The takeaway: After pain fades, commit to 6 more weeks of guided loading. That window is where the injury becomes a memory instead of a pattern."
+      }
+    }
+  },
+
+  "sources": {
+    "eyebrow": "Additional sources",
+    "title": "Watch or read more",
+    "description": "Videos and social posts that expand on \"{title}\".",
+    "types": {
+      "youtube": "Full video",
+      "instagram": "Instagram post",
+      "twitter": "Twitter thread",
+      "linkedin": "LinkedIn post",
+      "video": "Video content"
+    },
+    "hints": {
+      "youtube": "Practical video breakdown",
+      "instagram": "Quick visual highlights",
+      "twitter": "Short-form notes",
+      "linkedin": "Professional discussion",
+      "video": "Visual content"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { TrajectoryDivider } from "../shared/trajectory-divider";
+import { TrajectoryDivider } from "@/components/shared/trajectory-divider";
 import { ServicesHero } from "./services-hero";
 import { ServicesList } from "./services-list";
 

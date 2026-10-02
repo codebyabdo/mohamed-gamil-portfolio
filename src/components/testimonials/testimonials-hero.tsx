@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/motion";
-import { EyebrowTag } from "@/components/shared/eyebrow-badge";
+import { EyebrowTag } from "@/components/shared/eyebrow-tag";
 
 export async function TestimonialsHero() {
   const t = await getTranslations("testimonials.hero");
