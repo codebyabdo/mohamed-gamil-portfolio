@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "eyebrow": "Contact & Booking",
+    "title": "Let's start here.",
+    "description": "Whether you would like to request a session or ask about physiotherapy, get in touch to learn about the next step.",
+    "primaryCta": "Chat on WhatsApp",
+    "secondaryCta": "Request a Session"
+  },
+  "methods": {
+    "title": "Choose how to get in touch",
+    "whatsapp": "WhatsApp",
+    "whatsappDescription": "For inquiries and booking requests",
+    "phone": "Phone Call",
+    "phoneDescription": "Speak directly for inquiries"
+  },
+  "booking": {
+    "eyebrow": "Booking Request",
+    "title": "Request a Session",
+    "description": "Enter your basic details and we will prepare a message for WhatsApp.",
+    "name": "Full Name",
+    "namePlaceholder": "Enter your name",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Your phone number",
+    "inquiry": "Area of Inquiry",
+    "inquiryPlaceholder": "Select an area",
+    "preferredTime": "Preferred Contact Time",
+    "morning": "Morning",
+    "evening": "Evening",
+    "anytime": "Anytime",
+    "submit": "Continue on WhatsApp",
+    "privacyNote": "Your information is not stored on this website. You can review and send the message through WhatsApp."
+  },
+  "inquiries": {
+    "sportsInjuries": "Sports Injuries",
+    "backPain": "Back Pain",
+    "jointPain": "Joint Pain",
+    "rehabilitation": "Rehabilitation",
+    "general": "General Inquiry"
+  },
+  "information": {
+    "title": "Center Information",
+    "centerName": "Al-Jamil Physiotherapy Center",
+    "address": "Address",
+    "workingHours": "Working Hours",
+    "workingDays": "Saturday – Thursday",
+    "workingTime": "10 AM – 8 PM",
+    "phone": "Phone",
+    "email": "Email",
+    "directions": "View Location"
+  },
+  "faq": {
+    "title": "Before You Get in Touch",
+    "items": {
+      "booking": {
+        "question": "How can I book my first session?",
+        "answer": "Contact us on WhatsApp to ask about available appointments and the booking process."
+      },
+      "preparation": {
+        "question": "What should I bring to my first session?",
+        "answer": "You may bring any previous reports or scans related to your condition, if available."
+      },
+      "consultation": {
+        "question": "Can I ask a question before booking?",
+        "answer": "Yes. You can send an initial inquiry through WhatsApp before requesting a session."
+      },
+      "service": {
+        "question": "How do I know which service is right for me?",
+        "answer": "You can describe your inquiry when contacting the doctor, who can advise on the appropriate next step after assessment."
+      }
+    }
+  }
+}

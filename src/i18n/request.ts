@@ -20,6 +20,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       about: (await import(`../../messages/${locale}/about.json`)).default,
       approach: (await import(`../../messages/${locale}/approach.json`)).default,
       insights: (await import(`../../messages/${locale}/insights.json`)).default,
+      contact: (await import(`../../messages/${locale}/contact.json`)).default,
       navigation: (await import(`../../messages/${locale}/navigation.json`))
         .default,
 
