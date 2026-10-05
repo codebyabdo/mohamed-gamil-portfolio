@@ -1,6 +1,5 @@
 import { getLocale, getTranslations } from "next-intl/server";
 
-import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 
 import { Button } from "@/components/ui/button";

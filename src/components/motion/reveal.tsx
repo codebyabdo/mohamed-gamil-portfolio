@@ -1,7 +1,6 @@
 "use client";
-
-import { m, type Variants } from "framer-motion";
-import type { ReactNode } from "react";
+import { m, useReducedMotion, type Variants } from "framer-motion";
+import { useMemo, type ReactNode } from "react";
 import {
   fadeUp,
   fadeIn,
@@ -42,16 +41,25 @@ export function Reveal({
   amount = 0.25,
   variants,
 }: RevealProps) {
-  const resolved = variants ?? variantMap[direction];
-
+  const shouldReduceMotion = useReducedMotion();
+  const resolvedVariants = variants ?? variantMap[direction];
+  const finalVariants = useMemo<Variants>(() => {
+    if (!shouldReduceMotion) {
+      return resolvedVariants;
+    }
+    return {
+      hidden: { opacity: 0 },
+      visible: { opacity: 1, transition: { duration: 0.01, delay: 0 } },
+    };
+  }, [resolvedVariants, shouldReduceMotion]);
   return (
     <m.div
       className={cn(className)}
-      variants={resolved}
+      variants={finalVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once, amount }}
-      transition={delay ? { delay } : undefined}
+      transition={!shouldReduceMotion && delay > 0 ? { delay } : undefined}
     >
       {children}
     </m.div>

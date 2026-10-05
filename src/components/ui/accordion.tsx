@@ -18,13 +18,7 @@ interface AccordionProps extends AccordionPrimitive.Root.Props {
   children?: React.ReactNode;
 }
 
-function Accordion({
-  type: _type = "single",
-  collapsible: _collapsible = true,
-  className,
-  children,
-  ...props
-}: AccordionProps) {
+function Accordion({ className, children, ...props }: AccordionProps) {
   return (
     <AccordionPrimitive.Root
       data-slot="accordion"
@@ -39,10 +33,7 @@ function Accordion({
 /* ═════════════════════════════════════════════════
    Item
    ═════════════════════════════════════════════════ */
-function AccordionItem({
-  className,
-  ...props
-}: AccordionPrimitive.Item.Props) {
+function AccordionItem({ className, ...props }: AccordionPrimitive.Item.Props) {
   return (
     <AccordionPrimitive.Item
       data-slot="accordion-item"

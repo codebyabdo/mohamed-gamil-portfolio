@@ -19,7 +19,6 @@ export async function InsightBody({ insight }: InsightBodyProps) {
      ───────────────────────────────────────────── */
   const content = tItems.raw(`${insight.id}.content`) as InsightContent;
 
-  const sectionKeys = content.sections?.map((_, i) => String(i)) ?? [];
 
   return (
     <Section spacing="md">
@@ -100,7 +99,7 @@ export async function InsightBody({ insight }: InsightBodyProps) {
                 <Quote
                   aria-hidden="true"
                   className="
-                    absolute end-6 top-6 size-16 text-sage/10
+                    absolute inset-e-6 top-6 size-16 text-sage/10
                     sm:size-20
                   "
                 />
@@ -124,7 +123,7 @@ export async function InsightBody({ insight }: InsightBodyProps) {
               <aside
                 className="
                   flex items-start gap-4 rounded-2xl
-                  border border-sage/30 bg-sage/[0.04]
+                  border border-sage/30 bg-sage/4
                   p-5 sm:p-6
                 "
               >

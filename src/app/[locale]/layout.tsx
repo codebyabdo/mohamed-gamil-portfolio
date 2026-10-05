@@ -1,21 +1,27 @@
 import type { Metadata } from "next";
+
 import {
   DM_Sans,
   IBM_Plex_Sans_Arabic,
   Inter,
   Manrope,
 } from "next/font/google";
+
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+
 import { notFound } from "next/navigation";
 
 import { routing } from "@/i18n/routing";
 
-import "../globals.css";
 import { SiteHeader } from "@/components/layout/site-header";
-import { MotionProvider } from "@/components/motion";
-import { SmoothScrollProvider } from "@/components/motion/smooth-scroll-provider";
 import { SiteFooter } from "@/components/layout/site-footer";
+
+import { MotionProvider } from "@/components/motion";
+
+import { SmoothScrollProvider } from "@/components/motion/smooth-scroll-provider";
+
+import "../globals.css";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -38,26 +44,29 @@ const inter = Inter({
 const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
   variable: "--font-ibm-plex-arabic",
   subsets: ["arabic", "latin"],
-  display: "swap",
   weight: "400",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Mohamed Gamil",
+  title: {
+    default: "Dr. Mohamed Gamil",
+    template: "%s | Dr. Mohamed Gamil",
+  },
   description:
-    "Personal brand website for Dr. Mohamed Gamil, focused on physiotherapy, rehabilitation, patient education, and clinical care.",
+    "Physiotherapy and rehabilitation focused on understanding movement, personalized care, and recovery.",
 };
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-type LocaleLayoutProps = {
+interface LocaleLayoutProps {
   children: React.ReactNode;
   params: Promise<{
     locale: string;
   }>;
-};
+}
 
 export default async function LocaleLayout({
   children,
@@ -80,15 +89,22 @@ export default async function LocaleLayout({
       lang={locale}
       dir={direction}
       data-scroll-behavior="smooth"
-      className={`${dmSans.variable} ${manrope.variable} ${inter.variable} ${ibmPlexSansArabic.variable}`}
+      className={[
+        dmSans.variable,
+        manrope.variable,
+        inter.variable,
+        ibmPlexSansArabic.variable,
+      ].join(" ")}
     >
       <body>
         <SmoothScrollProvider>
           <MotionProvider>
             <NextIntlClientProvider messages={messages}>
               <SiteHeader />
+
               {children}
-              <SiteFooter/>
+
+              <SiteFooter />
             </NextIntlClientProvider>
           </MotionProvider>
         </SmoothScrollProvider>

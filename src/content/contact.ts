@@ -4,7 +4,7 @@ export const CONTACT_INFO: ContactInfo = {
   doctorName: "Dr. Mohamed Gamil",
   centerName: "Al-Jamil Physiotherapy Center",
 
-  whatsapp: "201000000000",
+  whatsapp: "201153414179",
   phone: "+201000000000",
 
   email: "contact@example.com",

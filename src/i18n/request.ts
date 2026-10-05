@@ -1,26 +1,31 @@
 import { getRequestConfig } from "next-intl/server";
-import { notFound } from "next/navigation";
+import { hasLocale } from "next-intl";
 
 import { routing } from "./routing";
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  const locale = await requestLocale;
+  const requestedLocale = await requestLocale;
 
-  if (
-    !locale ||
-    !routing.locales.includes(locale as (typeof routing.locales)[number])
-  ) {
-    notFound();
-  }
+  const locale = hasLocale(routing.locales, requestedLocale)
+    ? requestedLocale
+    : routing.defaultLocale;
 
   return {
     locale,
+
     messages: {
       home: (await import(`../../messages/${locale}/home.json`)).default,
+
       about: (await import(`../../messages/${locale}/about.json`)).default,
-      approach: (await import(`../../messages/${locale}/approach.json`)).default,
-      insights: (await import(`../../messages/${locale}/insights.json`)).default,
+
+      approach: (await import(`../../messages/${locale}/approach.json`))
+        .default,
+
+      insights: (await import(`../../messages/${locale}/insights.json`))
+        .default,
+
       contact: (await import(`../../messages/${locale}/contact.json`)).default,
+
       navigation: (await import(`../../messages/${locale}/navigation.json`))
         .default,
 
@@ -38,6 +43,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
         .default,
 
       social: (await import(`../../messages/${locale}/social.json`)).default,
+
       footer: (await import(`../../messages/${locale}/footer.json`)).default,
     },
   };

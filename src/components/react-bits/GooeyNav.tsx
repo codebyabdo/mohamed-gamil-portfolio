@@ -1,5 +1,3 @@
-/* eslint-disable react-hooks/refs */
-/* eslint-disable react-hooks/purity */
 "use client";
 
 import React, {
@@ -490,7 +488,11 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
                     isActive ? "active" : ""
                   }`}
                 >
-                  {renderLink ? renderLink(linkProps) : <a {...linkProps} />}
+                  {renderLink ? (
+                    React.createElement(renderLink, linkProps)
+                  ) : (
+                    <a {...linkProps} />
+                  )}
                 </li>
               );
             })}

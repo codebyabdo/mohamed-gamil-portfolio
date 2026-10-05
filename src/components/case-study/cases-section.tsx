@@ -2,7 +2,6 @@ import { CASES } from "@/content/case-study";
 import { CasesHero } from "./cases-hero";
 import { CasesList } from "./cases-list";
 import { TrajectoryDivider } from "@/components/shared/trajectory-divider";
-import { TrajectoryLine } from "@/components/shared/trajectory-line";
 
 export function CasesSection() {
   return (
