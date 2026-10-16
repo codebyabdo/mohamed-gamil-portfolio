@@ -2,6 +2,7 @@
 
 import { m } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { Activity } from "lucide-react";
 
 import { HeroBackground } from "./hero-background";
 import { Container } from "@/components/ui/container";
@@ -10,7 +11,6 @@ import { Button } from "@/components/ui/button";
 import { Section } from "@/components/ui/section";
 import { transitions } from "@/lib/motion";
 import { EyebrowTag } from "@/components/shared/eyebrow-tag";
-import { Activity } from "lucide-react";
 import { Reveal } from "../motion";
 
 const containerVariants = {
@@ -36,9 +36,12 @@ export function Hero() {
   const t = useTranslations("home.hero");
 
   return (
-    <>
+    // Wrap in a relative container that owns the background
+    <div className="relative isolate overflow-hidden">
+      {/* Background — absolute, clipped to this wrapper */}
       <HeroBackground />
-      <Section className="relative isolate z-10 flex items-center overflow-hidden">
+
+      <Section className="relative z-10 flex items-center">
         <Container className="relative flex w-full flex-col items-center py-24 text-center sm:py-28 md:py-32">
           <m.div
             variants={containerVariants}
@@ -99,44 +102,35 @@ export function Hero() {
               variants={itemVariants}
               className="
                 mt-9 md:mt-10
-                flex
-                flex-wrap
-                items-center
-                justify-center
-                gap-3.5
+                flex flex-wrap items-center justify-center gap-3.5
                 sm:gap-4
               "
             >
-              <Link href="/contact">
-                <Button className="h-13 min-w-38.75 px-8 text-[15px] font-semibold shadow-xs">
-                  {t("primaryCta")}
-                </Button>
-              </Link>
+              <Button
+                render={<Link href="/contact" />}
+                className="h-13 min-w-38.75 px-8 text-[15px] font-semibold shadow-xs"
+              >
+                {t("primaryCta")}
+              </Button>
 
-              <Link href="/approach">
-                <Button
-                  variant="secondary"
-                  className="
-                    h-13
-                    min-w-38.75
-                    border border-border
-                    bg-surface/70
-                    px-8
-                    text-[15px]
-                    font-semibold
-                    text-primary
-                    shadow-none
-                    backdrop-blur-sm
-                    hover:bg-surface
-                  "
-                >
-                  {t("secondaryCta")}
-                </Button>
-              </Link>
+              <Button
+                render={<Link href="/approach" />}
+                variant="secondary"
+                className="
+                  h-13 min-w-38.75
+                  border border-border
+                  bg-surface/70 px-8
+                  text-[15px] font-semibold text-primary
+                  shadow-none backdrop-blur-sm
+                  hover:bg-surface
+                "
+              >
+                {t("secondaryCta")}
+              </Button>
             </m.div>
           </m.div>
         </Container>
       </Section>
-    </>
+    </div>
   );
 }

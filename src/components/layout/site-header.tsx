@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
+
 import { Link } from "@/i18n/navigation";
-import { Button } from "@/components/ui/button";
+
 import { DesktopNav } from "@/components/navigation/desktop-nav";
 import { LanguageSwitcher } from "@/components/navigation/language-switcher";
 import { MobileNav } from "@/components/navigation/mobile-nav";
@@ -27,9 +28,12 @@ export async function SiteHeader() {
 
             <LanguageSwitcher />
 
-            <Button className="shrink-0 rounded-full bg-primary px-5 py-6 font-heading text-sm font-semibold text-primary-foreground shadow-none transition-colors duration-300 hover:bg-primary/90">
-              <Link href="/contact">{t("bookSession")}</Link>
-            </Button>
+            <Link
+              href="/contact"
+              className="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-5 py-3 font-heading text-sm font-semibold text-primary-foreground shadow-none transition-colors duration-300 hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            >
+              {t("bookSession")}
+            </Link>
           </div>
 
           {/* Mobile / Tablet Navigation — visible below 2xl */}

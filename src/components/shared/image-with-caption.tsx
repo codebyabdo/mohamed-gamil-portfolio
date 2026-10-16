@@ -73,7 +73,7 @@ export function ImageWithCaption({
   subtitle,
   showDot = true,
   position = "bottom-start",
-  overlay = "soft",
+  overlay = "strong",
   priority = false,
   sizes = "(max-width: 1024px) 100vw, 50vw",
   aspect,

@@ -24,7 +24,7 @@ export async function AboutHero() {
               className="lg:col-span-5"
             >
               <ImageWithCaption
-                src="/image.png"
+                src="/doctor1.jpg"
                 alt={t("imageAlt")}
                 title={t("caption.name")}
                 subtitle={t("caption.role")}

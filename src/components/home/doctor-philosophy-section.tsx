@@ -40,15 +40,15 @@ export async function DoctorPhilosophySection() {
             {/* Visual — reveal from left (or right in RTL) */}
             <Reveal
               direction={locale === "ar" ? "right" : "left"}
-              className="relative min-h-105 overflow-hidden lg:col-span-5 lg:min-h-160"
+              className="relative aspect-[4/5] overflow-hidden sm:aspect-[3/4] lg:col-span-5 lg:aspect-auto lg:min-h-160"
             >
               <ImageWithCaption
-                src="/image.png"
+                src="/doctor1.jpg"
                 alt={t("imageAlt")}
                 title={t("caption.name")}
                 subtitle={t("caption.role")}
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="h-full min-h-105 lg:min-h-160"
+                className="h-full"
                 imageClassName="object-top"
               />
             </Reveal>

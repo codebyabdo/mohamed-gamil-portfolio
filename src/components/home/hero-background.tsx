@@ -4,20 +4,30 @@ import { useMemo } from "react";
 import GhostFibers from "../react-bits/GhostFibers";
 
 export function HeroBackground() {
-  // Read tokens once on mount (they don't change)
   const { primary, sage } = useMemo(() => {
     if (typeof window === "undefined") {
       return { primary: "#183b3a", sage: "#769a91" };
     }
     const styles = getComputedStyle(document.documentElement);
     return {
-      primary: styles.getPropertyValue("--color-primary").trim() || "#183b3a",
+      primary:
+        styles.getPropertyValue("--color-primary").trim() || "#183b3a",
       sage: styles.getPropertyValue("--color-sage").trim() || "#769a91",
     };
   }, []);
-  
+
   return (
-    <div className="absolute inset-0 z-1 pointer-events-none">
+    <div
+      className="pointer-events-none absolute inset-0 z-1 overflow-hidden"
+      style={{
+        // Fade out the canvas near the bottom so it blends into
+        // the next section instead of bleeding into it.
+        maskImage:
+          "linear-gradient(to bottom, black 0%, black 65%, transparent 100%)",
+        WebkitMaskImage:
+          "linear-gradient(to bottom, black 0%, black 65%, transparent 100%)",
+      }}
+    >
       <GhostFibers
         lineColor={primary}
         glowColor={sage}

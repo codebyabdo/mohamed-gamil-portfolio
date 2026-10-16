@@ -1,13 +1,24 @@
 "use client";
 
 import { useMemo } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
-import { navigationItems } from "./navigation-config";
+import { navigationItems, SocialItems } from "./navigation-config";
 import StaggeredMenu from "../react-bits/StaggeredMenu";
 
 export function MobileNav() {
   const t = useTranslations("navigation");
+  const locale = useLocale();
+
+  const socialItems = useMemo(
+    () =>
+      SocialItems.map((item) => ({
+        label: t(item.key),
+        ariaLabel: t(item.key),
+        link: item.href,
+      })),
+    [t],
+  );
 
   const menuItems = useMemo(
     () =>
@@ -19,14 +30,15 @@ export function MobileNav() {
     [t],
   );
 
-  // No `2xl:hidden` here — the parent in SiteHeader handles it.
   return (
     <StaggeredMenu
-      position="right"
+      position={locale === "ar" ? "right" : "left"}
       items={menuItems}
-      displaySocials={true}
+      socialItems={socialItems}
+      displaySocials
       displayItemNumbering
       isFixed
+      closeOnClickAway
       changeMenuColorOnOpen
       menuButtonColor="var(--color-primary)"
       openMenuButtonColor="var(--color-primary)"

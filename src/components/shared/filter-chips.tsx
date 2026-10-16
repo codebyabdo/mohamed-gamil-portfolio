@@ -49,7 +49,7 @@ export function FilterChips({
             aria-selected={isActive}
             onClick={() => onChange(option.value)}
             className={cn(
-              "relative flex items-center gap-2 rounded-full px-4 py-2",
+              "relative flex items-start gap-4 rounded-full px-4 py-2",
               "text-[12.5px] font-medium tracking-[0.01em]",
               "transition-colors duration-300",
               "focus-visible:outline-none",

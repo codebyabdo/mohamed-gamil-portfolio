@@ -33,6 +33,17 @@ export const navigationItems = [
   },
 ] as const;
 
+export const SocialItems = [
+  {
+    key: "instagram",
+    href: "https://www.instagram.com/yourprofile",
+  },
+  {
+    key: "facebook",
+    href: "https://www.facebook.com/yourprofile",
+  },
+] as const;
+
 export const navigationCta = {
   key: "bookSession",
   href: "/contact",

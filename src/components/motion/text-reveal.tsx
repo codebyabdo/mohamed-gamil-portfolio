@@ -1,6 +1,7 @@
 "use client";
 
-import { m } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
+
 import { viewportOnce } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
@@ -13,8 +14,11 @@ interface TextRevealProps {
 }
 
 /**
- * Reveals text word-by-word or char-by-char on scroll.
- * Only use on headings — never on long paragraphs (perf).
+ * Reveals short text word-by-word or character-by-character on scroll.
+ *
+ * Intended primarily for short headings and labels.
+ * Avoid using it on long paragraphs because every word/character
+ * becomes an individual animated element.
  */
 export function TextReveal({
   children,
@@ -23,31 +27,58 @@ export function TextReveal({
   splitBy = "word",
   as: Tag = "span",
 }: TextRevealProps) {
-  const parts = splitBy === "word" ? children.split(" ") : children.split("");
+  const shouldReduceMotion = useReducedMotion();
+
+  const parts = splitBy === "word" ? children.split(" ") : Array.from(children);
+
+  const animationDuration = shouldReduceMotion ? 0 : 0.55;
+  const animationDelay = shouldReduceMotion ? 0 : delay;
 
   return (
     <Tag className={cn("inline-block", className)}>
-      {parts.map((part, i) => (
-        <span
-          key={`${part}-${i}`}
-          className="inline-block overflow-hidden align-bottom"
-        >
-          <m.span
-            className="inline-block"
-            initial={{ y: "110%", opacity: 0 }}
-            whileInView={{ y: "0%", opacity: 1 }}
-            viewport={viewportOnce}
-            transition={{
-              duration: 0.55,
-              delay: delay + i * 0.04,
-              ease: [0.22, 1, 0.36, 1],
-            }}
+      {parts.map((part, index) => {
+        const isLastPart = index === parts.length - 1;
+
+        return (
+          <span
+            key={`${part}-${index}`}
+            className="inline-block overflow-hidden align-bottom"
           >
-            {part}
-            {splitBy === "word" && i < parts.length - 1 ? "\u00A0" : ""}
-          </m.span>
-        </span>
-      ))}
+            <m.span
+              className="inline-block"
+              initial={
+                shouldReduceMotion
+                  ? false
+                  : {
+                      y: "110%",
+                      opacity: 0,
+                    }
+              }
+              whileInView={
+                shouldReduceMotion
+                  ? undefined
+                  : {
+                      y: "0%",
+                      opacity: 1,
+                    }
+              }
+              viewport={viewportOnce}
+              transition={
+                shouldReduceMotion
+                  ? undefined
+                  : {
+                      duration: animationDuration,
+                      delay: animationDelay + index * 0.04,
+                      ease: [0.22, 1, 0.36, 1],
+                    }
+              }
+            >
+              {part}
+              {splitBy === "word" && !isLastPart ? "\u00A0" : null}
+            </m.span>
+          </span>
+        );
+      })}
     </Tag>
   );
 }
